@@ -1,0 +1,33 @@
+.navbar {
+  min-width: 128px;
+}
+
+.single-nav {
+  height: 64px;
+  width: 64px;
+  border: 1px solid #363652;
+  background-color: #222234;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  transition: all 250ms ease-in-out;
+  cursor: pointer;
+}
+
+.single-nav-expanded {
+  width: 128px;
+  transition: width 250ms ease-in-out;
+}
+
+.single-nav-active {
+  background-color: #96ffbc;
+  transition: all 250ms ease-in-out;
+}
+
+.title {
+  position: absolute;
+  left: 64px;
+}

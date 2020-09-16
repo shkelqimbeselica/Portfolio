@@ -9,6 +9,18 @@ class Navbar extends Component {
     this.state = {};
   }
 
+  handleHover = (e) => {
+    e.currentTarget.classList.add("single-nav-expanded");
+  };
+
+  handleClick = (e) => {
+    const allNavs = document.querySelectorAll(".single-nav");
+    for (let i = 0; i < allNavs.length; i++) {
+      allNavs[i].classList.remove("single-nav-active");
+    }
+    e.currentTarget.classList.add("single-nav-active");
+  };
+
   render() {
     let home = (
       <svg
@@ -58,10 +70,30 @@ class Navbar extends Component {
 
     return (
       <div className="navbar">
-        <SingleNav svg={home} title="Home" />
-        <SingleNav svg={home} title="Work" />
-        <SingleNav svg={home} title="About" />
-        <SingleNav svg={home} title="Contact" />
+        <SingleNav
+          svg={home}
+          handleHover={this.handleHover}
+          handleClick={this.handleClick}
+          title="Home"
+        />
+        <SingleNav
+          svg={home}
+          handleHover={this.handleHover}
+          handleClick={this.handleClick}
+          title="Work"
+        />
+        <SingleNav
+          svg={home}
+          handleHover={this.handleHover}
+          handleClick={this.handleClick}
+          title="About"
+        />
+        <SingleNav
+          svg={home}
+          handleHover={this.handleHover}
+          handleClick={this.handleClick}
+          title="Contact"
+        />
       </div>
     );
   }

@@ -31,3 +31,7 @@
   position: absolute;
   left: 64px;
 }
+
+.single-nav.single-nav-active .title {
+  color: #181824;
+}

@@ -9,7 +9,7 @@ class SingleNav extends Component {
   }
 
   handleHover = (e) => {
-    e.currentTarget.classList.add("single-nav-expanded");
+    this.props.handleHover(e);
   };
 
   handleBlur = (e) => {
@@ -17,17 +17,14 @@ class SingleNav extends Component {
   };
 
   handleClick = (e) => {
-    const allNavs = document.querySelectorAll(".single-nav");
-    for (let i = 0; i < allNavs.length; i++) {
-      allNavs[i].classList.remove("single-nav-active");
-    }
-    e.currentTarget.classList.add("single-nav-active");
+    this.props.handleClick(e);
   };
 
   render() {
     return (
       <div
         className="single-nav"
+        style={{ marginBottom: this.props.margin }}
         onMouseOver={this.handleHover}
         onMouseOut={this.handleBlur}
         onClick={this.handleClick}

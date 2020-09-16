@@ -1,0 +1,40 @@
+.footer {
+  margin-top: 180px;
+}
+
+.container {
+  /* width: calc(100% - 280px);
+  max-width: 1080px; */
+  margin: auto;
+  position: relative;
+}
+
+.main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  display: flex;
+}
+
+.heading {
+  font-size: 86px;
+  height: 94px;
+}
+
+.socialMedias {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 32px;
+  width: 255px;
+}
+
+.socialMedia {
+  border: 1px solid #363652;
+  background-color: #222234;
+  width: 64px;
+  height: 64px;
+}

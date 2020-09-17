@@ -1,9 +1,21 @@
 import React, { Component } from "react";
 import Slide from "./Slide";
 
-const SliderControl = ({ type, title, handleClick }) => {
+const SliderControl = ({
+  type,
+  title,
+  handleClick,
+  handleHover,
+  handleMouseOut,
+}) => {
   return (
-    <button className={`btn btn--${type}`} title={title} onClick={handleClick}>
+    <button
+      className={`btn btn--${type}`}
+      title={title}
+      onClick={handleClick}
+      onMouseOver={handleHover}
+      onMouseOut={handleMouseOut}
+    >
       <svg className="icon" viewBox="0 0 24 24">
         <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
       </svg>
@@ -16,36 +28,48 @@ class Carousel extends Component {
     super(props);
 
     this.state = { current: 0 };
-    this.handlePreviousClick = this.handlePreviousClick.bind(this);
-    this.handleNextClick = this.handleNextClick.bind(this);
-    this.handleSlideClick = this.handleSlideClick.bind(this);
+    // this.handlePreviousClick = this.handlePreviousClick.bind(this);
+    // this.handleNextClick = this.handleNextClick.bind(this);
+    // this.handleSlideClick = this.handleSlideClick.bind(this);
 
     this.slidesRef = React.createRef();
   }
 
-  handlePreviousClick() {
+  handlePreviousClick = () => {
     const previous = this.state.current - 1;
 
     this.setState({
       current: previous < 0 ? this.props.slides.length - 1 : previous,
     });
-  }
+  };
 
-  handleNextClick() {
+  handleNextClick = () => {
     const next = this.state.current + 1;
 
     this.setState({
       current: next === this.props.slides.length ? 0 : next,
     });
-  }
+  };
 
-  handleSlideClick(index) {
+  handleSlideClick = (index) => {
     if (this.state.current !== index) {
       this.setState({
         current: index,
       });
     }
-  }
+  };
+
+  handleHover = (e) => {
+    const target = e.currentTarget;
+    target.style.backgroundColor = "#96ffbc";
+    target.children[0].fill = "#181824";
+  };
+
+  handleMouseOut = (e) => {
+    const target = e.currentTarget;
+    target.style.backgroundColor = "transparent";
+    target.children[0].fill = "#6b7a8f";
+  };
 
   scrollIntoView = () => {
     this.slidesRef.current.scrollIntoView();
@@ -57,8 +81,9 @@ class Carousel extends Component {
     const headingId = `slider-heading__${heading
       .replace(/\s+/g, "-")
       .toLowerCase()}`;
+
     const wrapperTransform = {
-      transform: `translateX(-${current * (100 / slides.length)}%)`,
+      transform: `translateX(-${current * (87 / slides.length)}%)`,
     };
 
     return (
@@ -88,13 +113,17 @@ class Carousel extends Component {
           <SliderControl
             type="previous"
             title="Go to previous slide"
+            handleHover={this.handleHover}
             handleClick={this.handlePreviousClick}
+            handleMouseOut={this.handleMouseOut}
           />
 
           <SliderControl
             type="next"
             title="Go to next slide"
+            handleHover={this.handleHover}
             handleClick={this.handleNextClick}
+            handleMouseOut={this.handleMouseOut}
           />
         </div>
       </div>

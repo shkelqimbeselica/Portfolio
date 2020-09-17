@@ -301,7 +301,7 @@ body {
     transform calc(var(--base-duration) / 2) var(--base-ease),
     -webkit-transform calc(var(--base-duration) / 2) var(--base-ease);
   height: 356px !important;
-  width: 715px !important;
+  width: 474px !important;
   z-index: 1;
 }
 .slide--previous:hover,
@@ -337,7 +337,7 @@ body {
   top: 0;
   margin: 0 8px;
   width: 715px !important;
-  height: 561px !important;
+  height: 536px !important;
   position: relative;
 }
 /* @media (hover: hover) {
@@ -376,8 +376,8 @@ body {
   --d: 20;
   height: 100%;
   /* left: -5%; */
-  -o-object-fit: cover;
-  object-fit: cover;
+  /* -o-object-fit: cover; */
+  /* object-fit: cover; */
   opacity: 0;
   pointer-events: none;
   /* position: absolute; */

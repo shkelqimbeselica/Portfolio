@@ -8,6 +8,10 @@ const Footer = (props) => {
     e.preventDefault();
   };
 
+  const handleClick = (e) => {
+    alert("Social media");
+  };
+
   return (
     <>
       <footer className={style.footer}>
@@ -21,17 +25,20 @@ const Footer = (props) => {
             <div className={style.socialMedias}>
               <SingleNav
                 margin="0px"
-                handleClick={handleHover}
+                // type="footer"
+                handleClick={handleClick}
                 handleHover={handleHover}
               />
               <SingleNav
                 margin="0px"
-                handleClick={handleHover}
+                // type="footer"
+                handleClick={handleClick}
                 handleHover={handleHover}
               />
               <SingleNav
                 margin="0px"
-                handleClick={handleHover}
+                // type="footer"
+                handleClick={handleClick}
                 handleHover={handleHover}
               />
             </div>

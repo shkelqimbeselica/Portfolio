@@ -11,17 +11,14 @@ class About extends Component {
       <div className="about-me">
         <div className="container">
           <div className="avatar">
-            <img
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/forest.jpg"
-              width="349"
-              height="414"
-            />
+            <img src="/img/Shkëlqim.jpg" width="339" height="450" />
             <div className="about-intro">
               <h1>About me</h1>
               <p>
-                I am a developer
-                <br />
-                <br />I am a developer
+                I am a front-end developer, <br /> ambitious and a code
+                enthusiast! <br /> <br />
+                My main focus is building pixel-perfect, <br /> interactive
+                websites that are complex and yet easy to use.
               </p>
             </div>
           </div>

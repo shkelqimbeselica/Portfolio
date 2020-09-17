@@ -19,11 +19,28 @@ class Slide extends Component {
   }
 
   handleButtonClick = (e) => {
-    console.log(e);
+    const link = document.createElement("a");
+    link.setAttribute("target", "_blank");
+    switch (this.props.slide.headline) {
+      case "Balkan Cuisine": {
+        link.href = "http://perpetual-agreement.surge.sh/";
+        break;
+      }
+      case "Listify": {
+        link.href = "https://shkelqimbeselica.github.io/React-to-do-list/";
+        break;
+      }
+      case "Portfolio": {
+        link.href = "http://perpetual-doctor.surge.sh/";
+        break;
+      }
+    }
+
+    link.click();
   };
 
   render() {
-    const { src, button, headline, index } = this.props.slide;
+    const { src, headline, index } = this.props.slide;
     const current = this.props.current;
     let classNames = "slide";
 
@@ -60,6 +77,7 @@ class Slide extends Component {
                 root="slide-button"
                 background="slide-background"
                 button="view-project clicked-button"
+                handleButtonClick={this.handleButtonClick}
               />
             </div>
           </div>

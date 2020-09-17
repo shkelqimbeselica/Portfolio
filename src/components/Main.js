@@ -10,19 +10,17 @@ const slideData = [
   {
     index: 0,
     headline: "Balkan Cuisine",
-    src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/fashion.jpg",
+    src: "/img/Balkan Cuisine.webp",
   },
   {
     index: 1,
     headline: "Portfolio",
-    button: "Book travel",
-    src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/forest.jpg",
+    src: "/img/Portfolio.png",
   },
   {
     index: 2,
     headline: "Listify",
-    button: "Listen",
-    src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/guitar.jpg",
+    src: "/img/Listify.png",
   },
 ];
 

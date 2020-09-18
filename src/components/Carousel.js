@@ -88,7 +88,7 @@ class Carousel extends Component {
       .toLowerCase()}`;
 
     const wrapperTransform = {
-      transform: `translateX(-${current * (87 / slides.length)}%)`,
+      transform: `translateX(-${current * (85 / slides.length)}%)`,
     };
 
     return (

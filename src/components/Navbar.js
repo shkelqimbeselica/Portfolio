@@ -6,7 +6,7 @@ import "../stylesheets/Navbar.css";
 class Navbar extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = { active: "Home" };
   }
 
   scrollToElement = (el) => {
@@ -28,22 +28,9 @@ class Navbar extends Component {
     }
   };
 
-  handleClick = (e) => {
-    const target = e.currentTarget;
-    // Ndrrimi i ngjyres
-    let paths = target.querySelectorAll("path");
-    let polygons = target.querySelectorAll("polygon");
-    // let length = paths.length + polygons.length;
-
-    const allNavs = document.querySelectorAll(".single-nav");
-    for (let i = 0; i < allNavs.length; i++) {
-      allNavs[i].classList.remove("single-nav-active");
-      this.loop(paths, "blue");
-      this.loop(polygons, "blue");
-    }
-    target.classList.add("single-nav-active");
-    this.loop(paths, "red");
-    this.loop(polygons, "red");
+  handleClick = (obj) => {
+    const target = obj.event.currentTarget;
+    this.setState({ active: obj.title });
 
     switch (target.children[1].textContent) {
       case "Home": {
@@ -250,24 +237,28 @@ class Navbar extends Component {
         <SingleNav
           svg={home}
           handleHover={this.handleHover}
+          getActive={this.state.active}
           handleClick={this.handleClick}
           title="Home"
         />
         <SingleNav
           svg={pc}
           handleHover={this.handleHover}
+          getActive={this.state.active}
           handleClick={this.handleClick}
           title="Work"
         />
         <SingleNav
           svg={about}
           handleHover={this.handleHover}
+          getActive={this.state.active}
           handleClick={this.handleClick}
           title="About"
         />
         <SingleNav
           svg={contact}
           handleHover={this.handleHover}
+          getActive={this.state.active}
           handleClick={this.handleClick}
           title="Contact"
         />

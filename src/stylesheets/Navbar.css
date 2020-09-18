@@ -18,7 +18,7 @@
 }
 
 .single-nav-expanded {
-  width: 128px;
+  width: 144px;
   transition: width 250ms ease-in-out;
 }
 
@@ -27,9 +27,20 @@
   transition: all 250ms ease-in-out;
 }
 
-.title {
+.title-holder {
   position: absolute;
-  left: 64px;
+  left: 68px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.title-p {
+  font-family: Bebas Neue;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 .single-nav.single-nav-active .title {
@@ -38,6 +49,6 @@
 
 .static {
   position: absolute;
-  left: 18px;
+  left: 16px;
   display: flex;
 }

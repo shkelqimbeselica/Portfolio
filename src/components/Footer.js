@@ -23,6 +23,40 @@ const Footer = (props) => {
     }
   };
 
+  let contact = (
+    <svg
+      width="28px"
+      height="21px"
+      viewBox="0 0 28 21"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      // xmlns:xlink="http://www.w3.org/1999/xlink"
+    >
+      <title>Combined Shape</title>
+      <g
+        id="Page-1"
+        stroke="none"
+        stroke-width="1"
+        fill="none"
+        fill-rule="evenodd"
+      >
+        <g
+          id="Artboard"
+          transform="translate(-2.000000, -6.000000)"
+          fill="#181824"
+          fill-rule="nonzero"
+        >
+          <g id="Icon-03" transform="translate(2.000000, 6.000000)">
+            <path
+              d="M27.125,0 L27.125,21 L5.32907052e-15,21 L5.32907052e-15,0 L27.125,0 Z M2,5.431 L2,19 L25.124,19 L25.124,5.549 L13.6363694,13.4647529 L2,5.431 Z M25.124,2 L2,2 L2,3.001 L13.637,11.035 L25.124,3.121 L25.124,2 Z"
+              id="Combined-Shape"
+            ></path>
+          </g>
+        </g>
+      </g>
+    </svg>
+  );
+
   return (
     <>
       <footer className={style.footer} id="contact">
@@ -36,19 +70,20 @@ const Footer = (props) => {
             <div className={style.socialMedias}>
               <SingleNav
                 margin="0px"
-                // type="footer"
-                handleClick={(e) => handleClick(e, "LinkedIn")}
+                svg={contact}
                 handleHover={handleHover}
+                handleClick={(e) => handleClick(e, "FB")}
+                title="Contact"
               />
               <SingleNav
                 margin="0px"
-                // type="footer"
+                title="Fb"
                 handleClick={(e) => handleClick(e, "FB")}
                 handleHover={handleHover}
               />
               <SingleNav
                 margin="0px"
-                // type="footer"
+                title="Fb"
                 handleClick={(e) => handleClick(e, "MSG")}
                 handleHover={handleHover}
               />

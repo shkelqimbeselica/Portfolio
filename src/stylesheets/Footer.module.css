@@ -1,6 +1,8 @@
 .footer {
   margin-top: 180px;
-  margin-bottom: 250px;
+  /* margin-bottom: 250px; */
+  overflow: hidden;
+  height: 300px;
 }
 
 .container {
@@ -38,4 +40,10 @@
   background-color: #222234;
   width: 64px;
   height: 64px;
+}
+
+.footerSvg {
+  position: relative;
+  top: -40px;
+  right: -160px;
 }

@@ -56,6 +56,22 @@ const Footer = (props) => {
           </div>
         </div>
       </footer>
+      {/* <div className={style.footerSvg}>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="1956"
+          height="1843.124"
+          viewBox="0 0 1956 1843.124"
+        >
+          <path
+            id="Polygon_Copy_5"
+            data-name="Polygon Copy 5"
+            d="M838.674,0,1956,1162.538l-542.749,680.586h-870.5L0,1162.538,193.7,313.861Z"
+            fill="#0a0a14"
+            opacity="0.6"
+          />
+        </svg>
+      </div> */}
     </>
   );
 };

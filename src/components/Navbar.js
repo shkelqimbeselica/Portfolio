@@ -22,15 +22,29 @@ class Navbar extends Component {
     e.currentTarget.classList.add("single-nav-expanded");
   };
 
+  loop = (conditional, color) => {
+    for (let i = 0; i < conditional.length; i++) {
+      conditional[i].style.fill = color;
+    }
+  };
+
   handleClick = (e) => {
     const target = e.currentTarget;
+    // Ndrrimi i ngjyres
+    let paths = target.querySelectorAll("path");
+    let polygons = target.querySelectorAll("polygon");
+    // let length = paths.length + polygons.length;
+
     const allNavs = document.querySelectorAll(".single-nav");
     for (let i = 0; i < allNavs.length; i++) {
       allNavs[i].classList.remove("single-nav-active");
+      this.loop(paths, "blue");
+      this.loop(polygons, "blue");
     }
     target.classList.add("single-nav-active");
+    this.loop(paths, "red");
+    this.loop(polygons, "red");
 
-    // target.children[0].children[0].style.fill = "#181824 !important";
     switch (target.children[1].textContent) {
       case "Home": {
         this.scrollToElement("main");
@@ -56,52 +70,40 @@ class Navbar extends Component {
   render() {
     let home = (
       <svg
+        width="32px"
+        height="32px"
+        viewBox="0 0 32 32"
+        version="1.1"
         xmlns="http://www.w3.org/2000/svg"
-        width="26"
-        height="26"
-        viewBox="0 0 26 26"
+        // xmlns:xlink="http://www.w3.org/1999/xlink"
       >
-        <g id="Group_3" data-name="Group 3" transform="translate(-1)">
-          <g id="Group_17" data-name="Group 17" transform="translate(0.229)">
-            <g id="Group_18" data-name="Group 18" transform="translate(0.771)">
-              <g id="Rectangle" fill="none" strokeMiterlimit="10">
-                <path d="M0,10,12.921,0,26,10V26H0Z" stroke="none" />
-                <path
-                  d="M 12.92874622344971 2.523273468017578 L 2 10.98115825653076 L 2 24 L 24 24 L 24 10.98842144012451 L 12.92874622344971 2.523273468017578 M 12.9213695526123 0 L 26 10 L 26 26 L 0 26 L 0 10 L 12.9213695526123 0 Z"
-                  stroke="none"
-                  fill="#181824"
-                />
-              </g>
-              <path
-                id="Path_14_Copy"
-                data-name="Path 14 Copy"
-                d="M.5,0V8"
-                transform="translate(10 16)"
-                fill="none"
-                stroke="#181824"
-                strokeMiterlimit="10"
-                strokeWidth="2"
-              />
-              <path
-                id="Path_14"
-                data-name="Path 14"
-                d="M.5,0V8"
-                transform="translate(16 16)"
-                fill="none"
-                stroke="#181824"
-                strokeMiterlimit="10"
-                strokeWidth="2"
-              />
-              <path
-                id="Path"
-                d="M0,.5H5"
-                transform="translate(11 16.5)"
-                fill="none"
-                stroke="#181824"
-                strokeMiterlimit="10"
-                strokeWidth="2"
-              />
-            </g>
+        <title>Artboard</title>
+        <g
+          id="Artboard"
+          stroke="none"
+          stroke-width="1"
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <g
+            id="Icon-00"
+            transform="translate(3.000000, 3.000000)"
+            fill="#181824"
+            fill-rule="nonzero"
+          >
+            <path
+              d="M12.921371,0 L26,10 L26,26 L0,26 L0,10 L12.921371,0 Z M12.928,2.523 L2,10.98 L2,24 L24,24 L24,10.988 L12.928,2.523 Z"
+              id="Rectangle"
+            ></path>
+            <polygon
+              id="Path-14-Copy"
+              points="11.5 16 11.5 24 9.5 24 9.5 16"
+            ></polygon>
+            <polygon
+              id="Path-14"
+              points="17.5 16 17.5 24 15.5 24 15.5 16"
+            ></polygon>
+            <polygon id="Path" points="16 16 16 18 11 18 11 16"></polygon>
           </g>
         </g>
       </svg>
@@ -109,67 +111,55 @@ class Navbar extends Component {
 
     let pc = (
       <svg
+        width="32px"
+        height="32px"
+        viewBox="0 0 32 32"
+        version="1.1"
         xmlns="http://www.w3.org/2000/svg"
-        width="29"
-        height="22"
-        viewBox="0 0 29 22"
+        // xmlns:xlink="http://www.w3.org/1999/xlink"
       >
+        <title>Artboard</title>
         <g
-          id="Group_4"
-          data-name="Group 4"
-          transform="translate(29.524 -0.5) rotate(90)"
+          id="Artboard"
+          stroke="none"
+          stroke-width="1"
+          fill="none"
+          fill-rule="evenodd"
         >
           <g
-            id="Group_3_Copy"
-            data-name="Group 3 Copy"
-            transform="translate(0 0.024)"
+            id="Icon-01"
+            transform="translate(0.000000, 4.000000)"
+            fill="#181824"
+            fill-rule="nonzero"
           >
-            <g id="Group" transform="translate(0.5 29.5) rotate(-90)">
-              <g
-                id="Rectangle"
-                transform="translate(1.657 0)"
-                fill="none"
-                stroke="#8989a3"
-                strokeMiterlimit="10"
-                strokeWidth="2"
-              >
-                <rect width="25.686" height="19.556" stroke="none" />
-                <rect x="1" y="1" width="23.686" height="17.556" fill="none" />
+            <g
+              id="Group-4"
+              transform="translate(15.500000, 12.000000) rotate(90.000000) translate(-15.500000, -12.000000) translate(3.500000, -3.500000)"
+            >
+              <g id="Group-3-Copy" transform="translate(0.000000, 0.024117)">
+                <g
+                  id="Group"
+                  transform="translate(12.000000, 15.000000) rotate(-90.000000) translate(-12.000000, -15.000000) translate(-2.500000, 3.500000)"
+                >
+                  <path
+                    d="M27.5241168,0.5 L27.5241168,17.5 L1.52411684,17.5 L1.52411684,0.5 L27.5241168,0.5 Z M25.5241168,2.5 L3.52411684,2.5 L3.52411684,16.5 L25.5241168,16.5 L25.5241168,2.5 Z"
+                    id="Rectangle"
+                  ></path>
+                  <path
+                    d="M29,16.4814815 L29,23 L0,23 L0,16.4814815 L29,16.4814815 Z M27,18.481 L2,18.481 L2,20.999 L27,20.999 L27,18.481 Z"
+                    id="Rectangle-Copy-3"
+                  ></path>
+                  <polygon
+                    id="Path-11"
+                    points="11 5.58578644 12.4142136 7 9.415 10 12.4142136 13 11 14.4142136 6.58578644 10"
+                  ></polygon>
+                  <polygon
+                    id="Path-11-Copy"
+                    transform="translate(19.500000, 10.000000) rotate(-180.000000) translate(-19.500000, -10.000000) "
+                    points="21 5.5857864 22.4142136 6.99999996 19.415 9.99999996 22.4142136 13 21 14.4142136 16.5857864 9.99999996"
+                  ></polygon>
+                </g>
               </g>
-              <g
-                id="Rectangle_Copy_3"
-                data-name="Rectangle Copy 3"
-                transform="translate(0 15.481)"
-                fill="#222234"
-                stroke="#8989a3"
-                strokeMiterlimit="10"
-                strokeWidth="2"
-              >
-                <rect width="29" height="6.519" stroke="none" />
-                <rect x="1" y="1" width="27" height="4.519" fill="none" />
-              </g>
-              <path
-                id="Path_11"
-                data-name="Path 11"
-                d="M3,0,0,3,3,6"
-                transform="translate(8 6)"
-                fill="none"
-                stroke="#8989a3"
-                strokeLinecap="square"
-                strokeMiterlimit="10"
-                strokeWidth="2"
-              />
-              <path
-                id="Path_11_Copy"
-                data-name="Path 11 Copy"
-                d="M3,0,0,3,3,6"
-                transform="translate(21 12) rotate(-180)"
-                fill="none"
-                stroke="#8989a3"
-                strokeLinecap="square"
-                strokeMiterlimit="10"
-                strokeWidth="2"
-              />
             </g>
           </g>
         </g>
@@ -178,64 +168,44 @@ class Navbar extends Component {
 
     let about = (
       <svg
+        width="32px"
+        height="32px"
+        viewBox="0 0 32 32"
+        version="1.1"
         xmlns="http://www.w3.org/2000/svg"
-        width="30"
-        height="22"
-        viewBox="0 0 30 22"
+        // xmlns:xlink="http://www.w3.org/1999/xlink"
       >
-        <g id="Group_8" data-name="Group 8" transform="translate(0.5)">
-          <g id="Group_6" data-name="Group 6">
-            <g
+        <title>Artboard</title>
+        <g
+          id="Artboard"
+          stroke="none"
+          stroke-width="1"
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <g
+            id="Icon-02"
+            transform="translate(0.500000, 5.000000)"
+            fill="#181824"
+            fill-rule="nonzero"
+          >
+            <path
+              d="M26.5,0 L4.5,0 L4.5,22 L26.5,22 L26.5,0 Z M24.5,2 L24.5,20 L6.5,20 L6.5,2 L24.5,2 Z"
               id="Rectangle"
-              transform="translate(3.5)"
-              fill="none"
-              stroke="#8989a3"
-              strokeMiterlimit="10"
-              strokeWidth="2"
-            >
-              <rect width="22" height="22" stroke="none" />
-              <rect x="1" y="1" width="20" height="20" fill="none" />
-            </g>
-            <path
-              id="Path_13_Copy_4"
-              data-name="Path 13 Copy 4"
-              d="M.5,0V7"
-              transform="translate(0 7)"
-              fill="none"
-              stroke="#8989a3"
-              strokeMiterlimit="10"
-              strokeWidth="2"
-            />
-            <path
-              id="Path_13_Copy"
-              data-name="Path 13 Copy"
-              d="M.5,0V7"
-              transform="translate(9.5 6)"
-              fill="none"
-              stroke="#8989a3"
-              strokeMiterlimit="10"
-              strokeWidth="2"
-            />
-            <path
-              id="Path_13_Copy_2"
-              data-name="Path 13 Copy 2"
-              d="M.5,0V7"
-              transform="translate(18.5 6)"
-              fill="none"
-              stroke="#8989a3"
-              strokeMiterlimit="10"
-              strokeWidth="2"
-            />
-            <path
-              id="Path_13_Copy_3"
-              data-name="Path 13 Copy 3"
-              d="M.5,0V7"
-              transform="translate(28 7)"
-              fill="none"
-              stroke="#8989a3"
-              strokeMiterlimit="10"
-              strokeWidth="2"
-            />
+            ></path>
+            <polygon
+              id="Path-13-Copy-4"
+              points="2.5 7 2.5 14 0.5 14 0.5 7"
+            ></polygon>
+            <polygon id="Path-13-Copy" points="12 6 12 13 10 13 10 6"></polygon>
+            <polygon
+              id="Path-13-Copy-2"
+              points="21 6 21 13 19 13 19 6"
+            ></polygon>
+            <polygon
+              id="Path-13-Copy-3"
+              points="30.5 7 30.5 14 28.5 14 28.5 7"
+            ></polygon>
           </g>
         </g>
       </svg>
@@ -243,33 +213,35 @@ class Navbar extends Component {
 
     let contact = (
       <svg
-        id="Group_3"
-        data-name="Group 3"
+        width="28px"
+        height="21px"
+        viewBox="0 0 28 21"
+        version="1.1"
         xmlns="http://www.w3.org/2000/svg"
-        width="27.125"
-        height="21"
-        viewBox="0 0 27.125 21"
+        // xmlns:xlink="http://www.w3.org/1999/xlink"
       >
+        <title>Combined Shape</title>
         <g
-          id="Rectangle"
+          id="Page-1"
+          stroke="none"
+          stroke-width="1"
           fill="none"
-          stroke="#8989a3"
-          strokeMiterlimit="10"
-          strokeWidth="2"
+          fill-rule="evenodd"
         >
-          <rect width="27.125" height="21" stroke="none" />
-          <rect x="1" y="1" width="25.125" height="19" fill="none" />
+          <g
+            id="Artboard"
+            transform="translate(-2.000000, -6.000000)"
+            fill="#181824"
+            fill-rule="nonzero"
+          >
+            <g id="Icon-03" transform="translate(2.000000, 6.000000)">
+              <path
+                d="M27.125,0 L27.125,21 L5.32907052e-15,21 L5.32907052e-15,0 L27.125,0 Z M2,5.431 L2,19 L25.124,19 L25.124,5.549 L13.6363694,13.4647529 L2,5.431 Z M25.124,2 L2,2 L2,3.001 L13.637,11.035 L25.124,3.121 L25.124,2 Z"
+                id="Combined-Shape"
+              ></path>
+            </g>
+          </g>
         </g>
-        <path
-          id="Path_10"
-          data-name="Path 10"
-          d="M0,0,12.674,8.75,25.375,0"
-          transform="translate(0.962 3.5)"
-          fill="none"
-          stroke="#8989a3"
-          strokeMiterlimit="10"
-          strokeWidth="2"
-        />
       </svg>
     );
 

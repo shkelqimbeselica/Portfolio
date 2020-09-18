@@ -72,7 +72,12 @@ class Carousel extends Component {
   };
 
   scrollIntoView = () => {
-    this.slidesRef.current.scrollIntoView();
+    const element = this.slidesRef.current;
+    const headerOffset = 120;
+    const elementPosition = element.getBoundingClientRect().top;
+    const offsetPosition = elementPosition - headerOffset;
+
+    document.body.scrollTo(0, offsetPosition);
   };
 
   render() {
@@ -87,7 +92,12 @@ class Carousel extends Component {
     };
 
     return (
-      <div className="slider" aria-labelledby={headingId} ref={this.props.ref}>
+      <div
+        className="slider"
+        id="slider"
+        aria-labelledby={headingId}
+        ref={this.props.ref}
+      >
         <div className="my-work" style={{ position: "relative" }}>
           <span className="check-out-my">Check out my</span>{" "}
           <span className="work">work</span>

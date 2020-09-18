@@ -8,13 +8,21 @@ const Footer = (props) => {
     e.preventDefault();
   };
 
-  const handleClick = (e) => {
-    alert("Social media");
+  const handleClick = (e, data) => {
+    const link = document.createElement("a");
+    link.setAttribute("target", "_blank");
+    switch (data) {
+      case "LinkedIn": {
+        link.href =
+          "https://www.linkedin.com/in/shk%C3%ABlqim-beselica-17935b15a/";
+        link.click();
+      }
+    }
   };
 
   return (
     <>
-      <footer className={style.footer}>
+      <footer className={style.footer} id="contact">
         <div className={style.container}>
           <div className={style.main}>
             <div className={style.name}>
@@ -26,19 +34,19 @@ const Footer = (props) => {
               <SingleNav
                 margin="0px"
                 // type="footer"
-                handleClick={handleClick}
+                handleClick={(e) => handleClick(e, "LinkedIn")}
                 handleHover={handleHover}
               />
               <SingleNav
                 margin="0px"
                 // type="footer"
-                handleClick={handleClick}
+                handleClick={(e) => handleClick(e, "FB")}
                 handleHover={handleHover}
               />
               <SingleNav
                 margin="0px"
                 // type="footer"
-                handleClick={handleClick}
+                handleClick={(e) => handleClick(e, "MSG")}
                 handleHover={handleHover}
               />
             </div>

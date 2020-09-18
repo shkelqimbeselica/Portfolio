@@ -22,6 +22,7 @@ h1.title {
   position: relative;
   left: 0;
   line-height: 128px;
+  letter-spacing: 6px;
 }
 
 .border-left {

@@ -30,14 +30,14 @@ class SingleNav extends Component {
     return (
       <div
         className={`single-nav ${
-          this.state.className !== "" ? this.state.className : null
+          this.state.className !== "" ? this.state.className : ""
         }`}
         style={{ marginBottom: this.props.margin }}
         onMouseOver={this.handleHover}
         onMouseOut={this.handleBlur}
         onClick={this.handleClick}
       >
-        {this.props.svg}
+        <div className="static">{this.props.svg}</div>
         <div className="title">{this.props.title}</div>
       </div>
     );

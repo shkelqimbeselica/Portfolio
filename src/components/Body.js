@@ -3,13 +3,17 @@ import "../stylesheets/Body.css";
 
 const Body = (props) => {
   return (
-    <div className="body">
+    <div
+      className="body"
+      style={{ marginTop: props.size === "Mobile" ? 0 : "58px" }}
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="1388.297"
         height="1353.49"
         viewBox="0 0 1388.297 1353.49"
         className="heptagon"
+        style={{ display: props.size === "Mobile" ? "none" : "block" }}
       >
         <path
           id="Polygon_Copy_4"
@@ -26,6 +30,7 @@ const Body = (props) => {
         height="1018.919"
         viewBox="0 0 1045.123 1018.919"
         className="small-heptagon"
+        style={{ display: props.size === "Mobile" ? "none" : "block" }}
       >
         <g
           id="Polygon_Copy"
@@ -92,13 +97,17 @@ const Body = (props) => {
 
       <div className="pentagon"></div>
 
-      <div className="rectangle-main">
+      <div
+        className="rectangle-main"
+        style={{ display: props.size === "Mobile" ? "none" : "block" }}
+      >
         <svg
           className="vertical vertical-two"
           xmlns="http://www.w3.org/2000/svg"
           width="10"
           height="510"
           viewBox="0 0 1 510"
+          style={{ display: props.size === "Mobile" ? "none" : "block" }}
         >
           <rect id="Rectangle" width="1" height="104" fill="#363652"></rect>
           <circle width="8" height="8" r="3" fill="#363652" class="small-rect">
@@ -127,6 +136,7 @@ const Body = (props) => {
           height="12"
           className="horizontal horizontal-two"
           viewBox="0 0 5444 8"
+          style={{ display: props.size === "Mobile" ? "none" : "block" }}
         >
           <rect
             xmlns="http://www.w3.org/2000/svg"

@@ -34,7 +34,9 @@ class Header extends Component {
   }
 
   componentDidMount() {
-    this.scheduleNextUpdate();
+    setTimeout(() => {
+      this.scheduleNextUpdate();
+    }, 1000);
   }
 
   scheduleNextUpdate = () => {

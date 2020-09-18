@@ -35,3 +35,9 @@
 .single-nav.single-nav-active .title {
   color: #181824;
 }
+
+.static {
+  position: absolute;
+  left: 18px;
+  display: flex;
+}

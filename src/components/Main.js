@@ -38,7 +38,7 @@ class Main extends Component {
 
   render() {
     return (
-      <div className="main">
+      <div className="main" id="main">
         <Header />
         <div className="main-intro">
           <Navbar />

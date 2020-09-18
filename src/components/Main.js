@@ -73,11 +73,4 @@ class Main extends Component {
   }
 }
 
-const style = {
-  button: {
-    position: "relative",
-    color: "red",
-  },
-};
-
 export default Main;

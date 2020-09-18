@@ -16,7 +16,10 @@ const Footer = (props) => {
         link.href =
           "https://www.linkedin.com/in/shk%C3%ABlqim-beselica-17935b15a/";
         link.click();
+        break;
       }
+      default:
+        break;
     }
   };
 

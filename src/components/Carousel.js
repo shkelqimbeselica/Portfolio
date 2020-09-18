@@ -81,7 +81,7 @@ class Carousel extends Component {
   };
 
   render() {
-    const { current, direction } = this.state;
+    const { current } = this.state;
     const { slides, heading } = this.props;
     const headingId = `slider-heading__${heading
       .replace(/\s+/g, "-")
@@ -103,7 +103,7 @@ class Carousel extends Component {
           <span className="work">work</span>
         </div>
         <ul className="slider__wrapper" style={wrapperTransform}>
-          <h3 id={headingId} ref={this.slidesRef} class="visuallyhidden">
+          <h3 id={headingId} ref={this.slidesRef} className="visuallyhidden">
             {heading}
           </h3>
 

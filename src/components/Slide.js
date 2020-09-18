@@ -34,6 +34,8 @@ class Slide extends Component {
         link.href = "http://perpetual-doctor.surge.sh/";
         break;
       }
+      default:
+        break;
     }
 
     link.click();

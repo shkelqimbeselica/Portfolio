@@ -31,8 +31,6 @@ class Navbar extends Component {
     target.classList.add("single-nav-active");
 
     // target.children[0].children[0].style.fill = "#181824 !important";
-
-    let link = document.createElement("a");
     switch (target.children[1].textContent) {
       case "Home": {
         this.scrollToElement("main");
@@ -50,6 +48,8 @@ class Navbar extends Component {
         this.scrollToElement("contact");
         break;
       }
+      default:
+        break;
     }
   };
 
@@ -64,7 +64,7 @@ class Navbar extends Component {
         <g id="Group_3" data-name="Group 3" transform="translate(-1)">
           <g id="Group_17" data-name="Group 17" transform="translate(0.229)">
             <g id="Group_18" data-name="Group 18" transform="translate(0.771)">
-              <g id="Rectangle" fill="none" stroke-miterlimit="10">
+              <g id="Rectangle" fill="none" strokeMiterlimit="10">
                 <path d="M0,10,12.921,0,26,10V26H0Z" stroke="none" />
                 <path
                   d="M 12.92874622344971 2.523273468017578 L 2 10.98115825653076 L 2 24 L 24 24 L 24 10.98842144012451 L 12.92874622344971 2.523273468017578 M 12.9213695526123 0 L 26 10 L 26 26 L 0 26 L 0 10 L 12.9213695526123 0 Z"
@@ -79,8 +79,8 @@ class Navbar extends Component {
                 transform="translate(10 16)"
                 fill="none"
                 stroke="#181824"
-                stroke-miterlimit="10"
-                stroke-width="2"
+                strokeMiterlimit="10"
+                strokeWidth="2"
               />
               <path
                 id="Path_14"
@@ -89,8 +89,8 @@ class Navbar extends Component {
                 transform="translate(16 16)"
                 fill="none"
                 stroke="#181824"
-                stroke-miterlimit="10"
-                stroke-width="2"
+                strokeMiterlimit="10"
+                strokeWidth="2"
               />
               <path
                 id="Path"
@@ -98,8 +98,8 @@ class Navbar extends Component {
                 transform="translate(11 16.5)"
                 fill="none"
                 stroke="#181824"
-                stroke-miterlimit="10"
-                stroke-width="2"
+                strokeMiterlimit="10"
+                strokeWidth="2"
               />
             </g>
           </g>
@@ -130,8 +130,8 @@ class Navbar extends Component {
                 transform="translate(1.657 0)"
                 fill="none"
                 stroke="#8989a3"
-                stroke-miterlimit="10"
-                stroke-width="2"
+                strokeMiterlimit="10"
+                strokeWidth="2"
               >
                 <rect width="25.686" height="19.556" stroke="none" />
                 <rect x="1" y="1" width="23.686" height="17.556" fill="none" />
@@ -142,8 +142,8 @@ class Navbar extends Component {
                 transform="translate(0 15.481)"
                 fill="#222234"
                 stroke="#8989a3"
-                stroke-miterlimit="10"
-                stroke-width="2"
+                strokeMiterlimit="10"
+                strokeWidth="2"
               >
                 <rect width="29" height="6.519" stroke="none" />
                 <rect x="1" y="1" width="27" height="4.519" fill="none" />
@@ -155,9 +155,9 @@ class Navbar extends Component {
                 transform="translate(8 6)"
                 fill="none"
                 stroke="#8989a3"
-                stroke-linecap="square"
-                stroke-miterlimit="10"
-                stroke-width="2"
+                strokeLinecap="square"
+                strokeMiterlimit="10"
+                strokeWidth="2"
               />
               <path
                 id="Path_11_Copy"
@@ -166,9 +166,9 @@ class Navbar extends Component {
                 transform="translate(21 12) rotate(-180)"
                 fill="none"
                 stroke="#8989a3"
-                stroke-linecap="square"
-                stroke-miterlimit="10"
-                stroke-width="2"
+                strokeLinecap="square"
+                strokeMiterlimit="10"
+                strokeWidth="2"
               />
             </g>
           </g>
@@ -190,8 +190,8 @@ class Navbar extends Component {
               transform="translate(3.5)"
               fill="none"
               stroke="#8989a3"
-              stroke-miterlimit="10"
-              stroke-width="2"
+              strokeMiterlimit="10"
+              strokeWidth="2"
             >
               <rect width="22" height="22" stroke="none" />
               <rect x="1" y="1" width="20" height="20" fill="none" />
@@ -203,8 +203,8 @@ class Navbar extends Component {
               transform="translate(0 7)"
               fill="none"
               stroke="#8989a3"
-              stroke-miterlimit="10"
-              stroke-width="2"
+              strokeMiterlimit="10"
+              strokeWidth="2"
             />
             <path
               id="Path_13_Copy"
@@ -213,8 +213,8 @@ class Navbar extends Component {
               transform="translate(9.5 6)"
               fill="none"
               stroke="#8989a3"
-              stroke-miterlimit="10"
-              stroke-width="2"
+              strokeMiterlimit="10"
+              strokeWidth="2"
             />
             <path
               id="Path_13_Copy_2"
@@ -223,8 +223,8 @@ class Navbar extends Component {
               transform="translate(18.5 6)"
               fill="none"
               stroke="#8989a3"
-              stroke-miterlimit="10"
-              stroke-width="2"
+              strokeMiterlimit="10"
+              strokeWidth="2"
             />
             <path
               id="Path_13_Copy_3"
@@ -233,8 +233,8 @@ class Navbar extends Component {
               transform="translate(28 7)"
               fill="none"
               stroke="#8989a3"
-              stroke-miterlimit="10"
-              stroke-width="2"
+              strokeMiterlimit="10"
+              strokeWidth="2"
             />
           </g>
         </g>
@@ -254,8 +254,8 @@ class Navbar extends Component {
           id="Rectangle"
           fill="none"
           stroke="#8989a3"
-          stroke-miterlimit="10"
-          stroke-width="2"
+          strokeMiterlimit="10"
+          strokeWidth="2"
         >
           <rect width="27.125" height="21" stroke="none" />
           <rect x="1" y="1" width="25.125" height="19" fill="none" />
@@ -267,8 +267,8 @@ class Navbar extends Component {
           transform="translate(0.962 3.5)"
           fill="none"
           stroke="#8989a3"
-          stroke-miterlimit="10"
-          stroke-width="2"
+          strokeMiterlimit="10"
+          strokeWidth="2"
         />
       </svg>
     );

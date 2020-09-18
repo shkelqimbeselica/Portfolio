@@ -12,7 +12,7 @@ function App() {
     if (window.innerHeight <= 480 || window.innerWidth <= 640) {
       setSize("Mobile");
     }
-  });
+  }, []);
 
   const render = () => {
     if (size === "Mobile") {

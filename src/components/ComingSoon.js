@@ -6,7 +6,9 @@ class ComingSoon extends Component {
     this.state = {};
   }
   render() {
-    return <div style={style.comingSoon}>Coming soon!</div>;
+    return (
+      <div style={style.comingSoon}>The mobile version is coming soon!</div>
+    );
   }
 }
 
@@ -20,7 +22,8 @@ const style = {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    fontSize: "32px",
+    fontSize: "30px",
+    textAlign: "center",
   },
 };
 

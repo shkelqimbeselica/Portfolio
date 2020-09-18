@@ -37,7 +37,7 @@ const Body = (props) => {
           data-name="Polygon Copy"
           transform="translate(-13.439)"
           fill="none"
-          stroke-miterlimit="10"
+          strokeMiterlimit="10"
         >
           <path
             d="M536,0,955.062,201.809l103.5,453.462-290,363.648H303.438l-290-363.648,103.5-453.462Z"
@@ -59,6 +59,48 @@ const Body = (props) => {
           >
             <animateMotion
               dur="40s"
+              repeatCount="indefinite"
+              path="M 536 1.10980224609375 L 117.8062133789062 202.5013427734375 L 14.5206298828125 655.0242919921875 L 303.9199829101562 1017.919250488281 L 768.0801391601562 1017.919250488281 L 1057.479248046875 655.0242919921875 L 954.1937866210938 202.5013427734375 L 536 1.10980224609375 M 536 -6.103515625e-05 L 955.0615844726562 201.8093872070312 L 1058.561279296875 655.271240234375 L 768.561767578125 1018.919250488281 L 303.4384155273438 1018.919250488281 L 13.4384765625 655.271240234375 L 116.9384155273438 201.8093872070312 L 536 -6.103515625e-05 Z"
+            />
+          </circle>
+          <circle
+            width="8"
+            height="8"
+            r="3"
+            fill="#363652"
+            // fillOpacity="0.4"
+            className="small-rect"
+          >
+            <animateMotion
+              dur="20s"
+              repeatCount="indefinite"
+              path="M 536 1.10980224609375 L 117.8062133789062 202.5013427734375 L 14.5206298828125 655.0242919921875 L 303.9199829101562 1017.919250488281 L 768.0801391601562 1017.919250488281 L 1057.479248046875 655.0242919921875 L 954.1937866210938 202.5013427734375 L 536 1.10980224609375 M 536 -6.103515625e-05 L 955.0615844726562 201.8093872070312 L 1058.561279296875 655.271240234375 L 768.561767578125 1018.919250488281 L 303.4384155273438 1018.919250488281 L 13.4384765625 655.271240234375 L 116.9384155273438 201.8093872070312 L 536 -6.103515625e-05 Z"
+            />
+          </circle>
+          <circle
+            width="8"
+            height="8"
+            r="3"
+            fill="#363652"
+            // fillOpacity="0.4"
+            className="small-rect"
+          >
+            <animateMotion
+              dur="30s"
+              repeatCount="indefinite"
+              path="M 536 1.10980224609375 L 117.8062133789062 202.5013427734375 L 14.5206298828125 655.0242919921875 L 303.9199829101562 1017.919250488281 L 768.0801391601562 1017.919250488281 L 1057.479248046875 655.0242919921875 L 954.1937866210938 202.5013427734375 L 536 1.10980224609375 M 536 -6.103515625e-05 L 955.0615844726562 201.8093872070312 L 1058.561279296875 655.271240234375 L 768.561767578125 1018.919250488281 L 303.4384155273438 1018.919250488281 L 13.4384765625 655.271240234375 L 116.9384155273438 201.8093872070312 L 536 -6.103515625e-05 Z"
+            />
+          </circle>
+          <circle
+            width="8"
+            height="8"
+            r="3"
+            fill="#363652"
+            // fillOpacity="0.4"
+            className="small-rect"
+          >
+            <animateMotion
+              dur="45s"
               repeatCount="indefinite"
               path="M 536 1.10980224609375 L 117.8062133789062 202.5013427734375 L 14.5206298828125 655.0242919921875 L 303.9199829101562 1017.919250488281 L 768.0801391601562 1017.919250488281 L 1057.479248046875 655.0242919921875 L 954.1937866210938 202.5013427734375 L 536 1.10980224609375 M 536 -6.103515625e-05 L 955.0615844726562 201.8093872070312 L 1058.561279296875 655.271240234375 L 768.561767578125 1018.919250488281 L 303.4384155273438 1018.919250488281 L 13.4384765625 655.271240234375 L 116.9384155273438 201.8093872070312 L 536 -6.103515625e-05 Z"
             />
@@ -110,7 +152,13 @@ const Body = (props) => {
           style={{ display: props.size === "Mobile" ? "none" : "block" }}
         >
           <rect id="Rectangle" width="1" height="104" fill="#363652"></rect>
-          <circle width="8" height="8" r="3" fill="#363652" class="small-rect">
+          <circle
+            width="8"
+            height="8"
+            r="3"
+            fill="#363652"
+            className="small-rect"
+          >
             <animate
               attributeName="cy"
               from="0"
@@ -119,7 +167,13 @@ const Body = (props) => {
               repeatCount="indefinite"
             ></animate>
           </circle>
-          <circle width="8" height="8" r="3" fill="#363652" class="small-rect">
+          <circle
+            width="8"
+            height="8"
+            r="3"
+            fill="#363652"
+            className="small-rect"
+          >
             <animate
               attributeName="cy"
               from="104"
@@ -144,7 +198,13 @@ const Body = (props) => {
             height="1"
             fill="#363652"
           ></rect>
-          <circle width="8" height="8" r="3" fill="#363652" class="small-rect">
+          <circle
+            width="8"
+            height="8"
+            r="3"
+            fill="#363652"
+            className="small-rect"
+          >
             <animate
               attributeName="cx"
               from="0"
@@ -153,7 +213,13 @@ const Body = (props) => {
               repeatCount="indefinite"
             />
           </circle>
-          <circle width="8" height="8" r="3" fill="#363652" class="small-rect">
+          <circle
+            width="8"
+            height="8"
+            r="3"
+            fill="#363652"
+            className="small-rect"
+          >
             <animate
               attributeName="cx"
               from="2000"
@@ -162,7 +228,13 @@ const Body = (props) => {
               repeatCount="indefinite"
             />
           </circle>
-          <circle width="8" height="8" r="3" fill="#363652" class="small-rect">
+          <circle
+            width="8"
+            height="8"
+            r="3"
+            fill="#363652"
+            className="small-rect"
+          >
             <animate
               attributeName="cx"
               from="0"
@@ -186,7 +258,13 @@ const Body = (props) => {
             height="1"
             fill="#363652"
           ></rect>
-          <circle width="8" height="8" r="3" fill="#363652" class="small-rect">
+          <circle
+            width="8"
+            height="8"
+            r="3"
+            fill="#363652"
+            className="small-rect"
+          >
             <animate
               attributeName="cx"
               from="0"
@@ -195,7 +273,13 @@ const Body = (props) => {
               repeatCount="indefinite"
             />
           </circle>
-          <circle width="8" height="8" r="3" fill="#363652" class="small-rect">
+          <circle
+            width="8"
+            height="8"
+            r="3"
+            fill="#363652"
+            className="small-rect"
+          >
             <animate
               attributeName="cx"
               from="2000"
@@ -204,7 +288,13 @@ const Body = (props) => {
               repeatCount="indefinite"
             />
           </circle>
-          <circle width="8" height="8" r="3" fill="#363652" class="small-rect">
+          <circle
+            width="8"
+            height="8"
+            r="3"
+            fill="#363652"
+            className="small-rect"
+          >
             <animate
               attributeName="cx"
               from="0"

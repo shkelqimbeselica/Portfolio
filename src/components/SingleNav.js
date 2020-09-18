@@ -12,13 +12,12 @@ class SingleNav extends Component {
     if (this.props.title === "Home") {
       this.setState({ className: "single-nav-active" });
     }
-
-    let navs = document.querySelectorAll(".single-nav:not(.single-nav-active)");
-    for (let l = 1; l < 4; l++) {
-      let Ppaths = navs[l].querySelectorAll("path");
-      let Ppolygons = navs[l].querySelectorAll("polygon");
-      this.loop(Ppaths, Ppolygons, "#8989A3");
-    }
+    // let navs = document.querySelectorAll(".single-nav:not(.single-nav-active)");
+    // for (let l = 0; l < 4; l++) {
+    //   let Ppaths = navs[l].querySelectorAll("path");
+    //   let Ppolygons = navs[l].querySelectorAll("polygon");
+    //   this.loop(Ppaths, Ppolygons, "#8989A3");
+    // }
   }
 
   loop = (conditional, secondConditional, color) => {
@@ -35,6 +34,7 @@ class SingleNav extends Component {
     }
   };
 
+  // console.log(navs[l]);
   giveColorToSvg = (e, activeColor, pasiveColor, type) => {
     const target = e.currentTarget;
     let Apaths = target.querySelectorAll("path");
@@ -46,6 +46,7 @@ class SingleNav extends Component {
       for (let l = 0; l < 4; l++) {
         let Ppaths = navs[l].querySelectorAll("path");
         let Ppolygons = navs[l].querySelectorAll("polygon");
+
         this.loop(Ppaths, Ppolygons, pasiveColor);
       }
     }
@@ -55,12 +56,13 @@ class SingleNav extends Component {
 
   handleHover = (e) => {
     this.props.handleHover(e);
-    this.giveColorToSvg(e, "white", "#8989A3", false);
+
+    if (this.props.type === "Nav") this.giveColorToSvg(e, "white", "#8989A3");
   };
 
   handleBlur = (e) => {
     e.currentTarget.classList.remove("single-nav-expanded");
-    this.giveColorToSvg(e, "#8989A3", "#8989A3", false);
+    this.giveColorToSvg(e, "#8989A3", "#8989A3");
   };
 
   handleClick = (e) => {
@@ -69,7 +71,7 @@ class SingleNav extends Component {
       title: e.currentTarget.children[1].textContent,
     });
 
-    this.giveColorToSvg(e, "#181824", "#8989A3", "click");
+    // this.giveColorToSvg(e, "#181824", "#8989A3", "click");
   };
 
   render() {

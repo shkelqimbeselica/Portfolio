@@ -6,6 +6,7 @@ import style from "../stylesheets/Footer.module.css";
 const Footer = (props) => {
   const handleHover = (e) => {
     e.preventDefault();
+    return;
   };
 
   const handleClick = (e, data) => {

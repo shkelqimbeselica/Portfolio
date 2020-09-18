@@ -75,7 +75,7 @@ class Navbar extends Component {
           <g
             id="Icon-00"
             transform="translate(3.000000, 3.000000)"
-            fill="#181824"
+            fill="#8989A3"
             fill-rule="nonzero"
           >
             <path
@@ -116,7 +116,7 @@ class Navbar extends Component {
           <g
             id="Icon-01"
             transform="translate(0.000000, 4.000000)"
-            fill="#181824"
+            fill="#8989A3"
             fill-rule="nonzero"
           >
             <g
@@ -173,7 +173,7 @@ class Navbar extends Component {
           <g
             id="Icon-02"
             transform="translate(0.500000, 5.000000)"
-            fill="#181824"
+            fill="#8989A3"
             fill-rule="nonzero"
           >
             <path
@@ -218,7 +218,7 @@ class Navbar extends Component {
           <g
             id="Artboard"
             transform="translate(-2.000000, -6.000000)"
-            fill="#181824"
+            fill="#8989A3"
             fill-rule="nonzero"
           >
             <g id="Icon-03" transform="translate(2.000000, 6.000000)">
@@ -240,6 +240,7 @@ class Navbar extends Component {
           getActive={this.state.active}
           handleClick={this.handleClick}
           title="Home"
+          type="Nav"
         />
         <SingleNav
           svg={pc}
@@ -247,6 +248,7 @@ class Navbar extends Component {
           getActive={this.state.active}
           handleClick={this.handleClick}
           title="Work"
+          type="Nav"
         />
         <SingleNav
           svg={about}
@@ -254,6 +256,7 @@ class Navbar extends Component {
           getActive={this.state.active}
           handleClick={this.handleClick}
           title="About"
+          type="Nav"
         />
         <SingleNav
           svg={contact}
@@ -261,6 +264,7 @@ class Navbar extends Component {
           getActive={this.state.active}
           handleClick={this.handleClick}
           title="Contact"
+          type="Nav"
         />
       </div>
     );

@@ -41,6 +41,7 @@
   display: flex;
   align-items: center;
   height: 100%;
+  font-size: 28px;
 }
 
 .single-nav.single-nav-active .title {
@@ -51,4 +52,13 @@
   position: absolute;
   left: 16px;
   display: flex;
+}
+
+.footer-static {
+  display: flex;
+  align-items: center;
+}
+
+.hovered {
+  fill: white !important;
 }

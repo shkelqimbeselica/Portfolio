@@ -6,7 +6,7 @@ import "../stylesheets/Navbar.css";
 class Navbar extends Component {
   constructor(props) {
     super(props);
-    this.state = { active: "Home" };
+    this.state = { active: "Home", hover: "" };
   }
 
   scrollToElement = (el) => {
@@ -20,6 +20,7 @@ class Navbar extends Component {
 
   handleHover = (e) => {
     e.currentTarget.classList.add("single-nav-expanded");
+    this.setState({ hover: e.currentTarget.children[1].textContent });
   };
 
   loop = (conditional, color) => {
@@ -68,15 +69,20 @@ class Navbar extends Component {
         <g
           id="Artboard"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
           fill="none"
-          fill-rule="evenodd"
+          fillRule="evenodd"
         >
           <g
             id="Icon-00"
             transform="translate(3.000000, 3.000000)"
-            fill="#8989A3"
-            fill-rule="nonzero"
+            fill={this.state.active === "Home" ? "#181824" : "#8989A3"}
+            className={
+              this.state.hover === "Home" && this.state.active !== "Home"
+                ? "hovered"
+                : ""
+            }
+            fillRule="nonzero"
           >
             <path
               d="M12.921371,0 L26,10 L26,26 L0,26 L0,10 L12.921371,0 Z M12.928,2.523 L2,10.98 L2,24 L24,24 L24,10.988 L12.928,2.523 Z"
@@ -109,15 +115,20 @@ class Navbar extends Component {
         <g
           id="Artboard"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
           fill="none"
-          fill-rule="evenodd"
+          fillRule="evenodd"
         >
           <g
             id="Icon-01"
             transform="translate(0.000000, 4.000000)"
-            fill="#8989A3"
-            fill-rule="nonzero"
+            fill={this.state.active === "Work" ? "#181824" : "#8989A3"}
+            className={
+              this.state.hover === "Work" && this.state.active !== "Work"
+                ? "hovered"
+                : ""
+            }
+            fillRule="nonzero"
           >
             <g
               id="Group-4"
@@ -166,15 +177,20 @@ class Navbar extends Component {
         <g
           id="Artboard"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
           fill="none"
-          fill-rule="evenodd"
+          fillRule="evenodd"
         >
           <g
             id="Icon-02"
             transform="translate(0.500000, 5.000000)"
-            fill="#8989A3"
-            fill-rule="nonzero"
+            fill={this.state.active === "About" ? "#181824" : "#8989A3"}
+            className={
+              this.state.hover === "About" && this.state.active !== "About"
+                ? "hovered"
+                : ""
+            }
+            fillRule="nonzero"
           >
             <path
               d="M26.5,0 L4.5,0 L4.5,22 L26.5,22 L26.5,0 Z M24.5,2 L24.5,20 L6.5,20 L6.5,2 L24.5,2 Z"
@@ -211,15 +227,20 @@ class Navbar extends Component {
         <g
           id="Page-1"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
           fill="none"
-          fill-rule="evenodd"
+          fillRule="evenodd"
         >
           <g
             id="Artboard"
             transform="translate(-2.000000, -6.000000)"
-            fill="#8989A3"
-            fill-rule="nonzero"
+            fill={this.state.active === "Contact" ? "#181824" : "#8989A3"}
+            className={
+              this.state.hover === "Contact" && this.state.active !== "Contact"
+                ? "hovered"
+                : ""
+            }
+            fillRule="nonzero"
           >
             <g id="Icon-03" transform="translate(2.000000, 6.000000)">
               <path
@@ -237,6 +258,7 @@ class Navbar extends Component {
         <SingleNav
           svg={home}
           handleHover={this.handleHover}
+          handleBlur={() => this.setState({ hover: "" })}
           getActive={this.state.active}
           handleClick={this.handleClick}
           title="Home"
@@ -245,6 +267,7 @@ class Navbar extends Component {
         <SingleNav
           svg={pc}
           handleHover={this.handleHover}
+          handleBlur={() => this.setState({ hover: "" })}
           getActive={this.state.active}
           handleClick={this.handleClick}
           title="Work"
@@ -253,6 +276,7 @@ class Navbar extends Component {
         <SingleNav
           svg={about}
           handleHover={this.handleHover}
+          handleBlur={() => this.setState({ hover: "" })}
           getActive={this.state.active}
           handleClick={this.handleClick}
           title="About"
@@ -261,6 +285,7 @@ class Navbar extends Component {
         <SingleNav
           svg={contact}
           handleHover={this.handleHover}
+          handleBlur={() => this.setState({ hover: "" })}
           getActive={this.state.active}
           handleClick={this.handleClick}
           title="Contact"

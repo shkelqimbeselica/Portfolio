@@ -37,6 +37,8 @@ p {
   max-width: 1280px;
   margin: auto;
   margin-top: 58px;
+  /* height: 2600px; */
+  /* overflow: hidden; */
 }
 
 .heptagon {
@@ -80,7 +82,7 @@ p {
 
 .rectangle-main {
   position: relative;
-  top: 2200px;
+  top: 2202px;
   width: 100%;
 }
 
@@ -105,4 +107,10 @@ p {
   top: -748px;
   left: -40px;
   z-index: 0;
+}
+
+.footer-end {
+  position: absolute;
+  bottom: -58px;
+  left: -73px;
 }

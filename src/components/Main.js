@@ -9,18 +9,18 @@ import "../stylesheets/Main.css";
 const slideData = [
   {
     index: 0,
-    headline: "Balkan Cuisine",
-    src: "/img/Balkan Cuisine.webp",
+    headline: "Portfolio",
+    src: "./img/Portfolio.png",
   },
   {
     index: 1,
-    headline: "Portfolio",
-    src: "/img/Portfolio.png",
+    headline: "Listify",
+    src: "./img/Listify.png",
   },
   {
     index: 2,
-    headline: "Listify",
-    src: "/img/Listify.png",
+    headline: "Balkan Cuisine",
+    src: "./img/Balkan Cuisine.webp",
   },
 ];
 

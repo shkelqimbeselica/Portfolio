@@ -12,7 +12,7 @@ class About extends Component {
         <div className="container">
           <div className="avatar">
             <img
-              src="./img/Shkelqim.jpg"
+              src="/img/Shkelqim.jpg"
               alt="Shkëlqim"
               width="339"
               height="450"

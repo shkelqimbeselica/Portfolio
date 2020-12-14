@@ -10,17 +10,17 @@ const slideData = [
   {
     index: 0,
     headline: "Portfolio",
-    src: "./img/Portfolio.png",
+    src: "/img/Portfolio.png",
   },
   {
     index: 1,
     headline: "Listify",
-    src: "./img/Listify.png",
+    src: "/img/Listify.png",
   },
   {
     index: 2,
     headline: "Balkan Cuisine",
-    src: "./img/Balkan Cuisine.webp",
+    src: "/img/Balkan Cuisine.webp",
   },
 ];
 

@@ -3,21 +3,22 @@ import Body from "./components/Body";
 import Main from "./components/Main";
 import About from "./components/About";
 import Footer from "./components/Footer";
-import ComingSoon from "./components/ComingSoon";
+
+import "./stylesheets/Responsive.css";
 
 function App() {
   const [size, setSize] = useState("PC");
 
-  useEffect(() => {
-    if (window.innerHeight <= 480 || window.innerWidth <= 640) {
-      setSize("Mobile");
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (window.innerHeight <= 480 || window.innerWidth <= 640) {
+  //     setSize("Mobile");
+  //   }
+  // }, []);
 
   const render = () => {
-    if (size === "Mobile") {
-      return <ComingSoon />;
-    }
+    // if (size === "Mobile") {
+    //   return <ComingSoon />;
+    // }
 
     return (
       <>

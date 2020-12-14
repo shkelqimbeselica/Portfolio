@@ -1,0 +1,74 @@
+@media only screen and (max-width: 768px) {
+  /* svgs nalt */
+  .small-heptagon,
+  .heptagon {
+    left: 0;
+  }
+
+  .main-intro {
+    margin-top: 48px;
+  }
+
+  .main#main {
+    margin-left: -14px;
+    position: relative;
+    top: 24px;
+  }
+
+  /* secila shkronje */
+  .letter {
+    font-size: 32px;
+    z-index: 5;
+  }
+
+  /* cursori i terminalit */
+  .cursor {
+    width: 18px;
+    height: 24px;
+    margin-left: 6px;
+    margin-top: 5px;
+    z-index: 5;
+  }
+
+  /* Navbari permas */
+  .navbar {
+    display: none;
+  }
+
+  /* emri mbiemrti bashke me p */
+  .intro {
+    margin-left: 0;
+  }
+
+  /* emri mbiemri */
+  h1.title {
+    font-size: 64px;
+    line-height: 64px;
+  }
+
+  p.description {
+    width: 41%;
+  }
+
+  .border-left {
+    /* margin-left: 24px; */
+    margin-left: 0px;
+    margin-top: 32px;
+    height: 295px;
+  }
+
+  .square {
+    margin-top: 290px;
+  }
+
+  .square:before {
+    top: -291px;
+    height: 297px;
+  }
+
+  /* vija skej paragrafit */
+  .lines {
+    left: -63.5px;
+    left: -24px;
+  }
+}

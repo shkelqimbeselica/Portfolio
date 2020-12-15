@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "../stylesheets/About.css";
 
+import profile from "../img/Shkelqim.jpg";
+
 class About extends Component {
   constructor(props) {
     super(props);
@@ -11,12 +13,7 @@ class About extends Component {
       <div className="about-me" id="about">
         <div className="container">
           <div className="avatar">
-            <img
-              src="/img/Shkelqim.jpg"
-              alt="Shkëlqim"
-              width="339"
-              height="450"
-            />
+            <img src={profile} alt="Shkëlqim" width="339" height="450" />
             <div className="about-intro">
               <h1>About me</h1>
               <p>

@@ -4,23 +4,27 @@ import Navbar from "./Navbar";
 import Carousel from "./Carousel";
 import StyledButton from "./StyledButton";
 
+import portfolio from "../img/Portfolio.png";
+import listify from "../img/Listify.png";
+import balkanCuisine from "../img/Balkan Cuisine.webp";
+
 import "../stylesheets/Main.css";
 
 const slideData = [
   {
     index: 0,
     headline: "Portfolio",
-    src: "/img/Portfolio.png",
+    src: portfolio,
   },
   {
     index: 1,
     headline: "Listify",
-    src: "/img/Listify.png",
+    src: listify,
   },
   {
     index: 2,
     headline: "Balkan Cuisine",
-    src: "/img/Balkan Cuisine.webp",
+    src: balkanCuisine,
   },
 ];
 

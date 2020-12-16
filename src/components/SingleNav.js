@@ -33,7 +33,7 @@ class SingleNav extends Component {
   render() {
     return (
       <div
-        className={`single-nav ${
+        className={`single-nav ${this.props.className} ${
           this.state.className !== "" ? this.state.className : ""
         }`}
         style={{

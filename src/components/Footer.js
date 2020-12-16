@@ -187,6 +187,7 @@ const Footer = (props) => {
                 margin="0px"
                 title="Email"
                 type="Footer"
+                className="footer-single-nav"
                 svg={contact}
                 handleClick={(e) => handleClick(e, "Email")}
                 handleHover={handleHover}
@@ -200,6 +201,7 @@ const Footer = (props) => {
                 svg={linkedin}
                 title="LinkedIn"
                 type="Footer"
+                className="footer-single-nav"
                 handleClick={(e) => handleClick(e, "LinkedIn")}
                 handleHover={handleHover}
                 handleBlur={(e) => {
@@ -212,6 +214,7 @@ const Footer = (props) => {
                 svg={instagram}
                 title="Instagram"
                 type="Footer"
+                className="footer-single-nav"
                 handleClick={(e) => handleClick(e, "Instagram")}
                 handleHover={handleHover}
                 handleBlur={(e) => {

@@ -87,12 +87,15 @@ class Carousel extends Component {
       .replace(/\s+/g, "-")
       .toLowerCase()}`;
 
-    // const wrapperTransform = {
-    //   transform: `translateX(-${current * (85 / slides.length)}%)`,
-    // };
+    // Qikjo posht duhet per pc, laptops etc
     const wrapperTransform = {
-      transform: `translateX(-${current * (78 / slides.length)}%)`,
+      transform: `translateX(-${current * (85 / slides.length)}%)`,
     };
+
+    // Qikjo posht duhet per per telefona
+    // const wrapperTransform = {
+    //   transform: `translateX(-${current * (78 / slides.length)}%)`,
+    // };
 
     return (
       <div

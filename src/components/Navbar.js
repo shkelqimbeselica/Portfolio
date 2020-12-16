@@ -263,6 +263,7 @@ class Navbar extends Component {
           handleClick={this.handleClick}
           title="Home"
           type="Nav"
+          className="main-single-nav"
         />
         <SingleNav
           svg={pc}
@@ -272,6 +273,7 @@ class Navbar extends Component {
           handleClick={this.handleClick}
           title="Work"
           type="Nav"
+          className="main-single-nav"
         />
         <SingleNav
           svg={about}
@@ -281,6 +283,7 @@ class Navbar extends Component {
           handleClick={this.handleClick}
           title="About"
           type="Nav"
+          className="main-single-nav"
         />
         <SingleNav
           svg={contact}
@@ -290,6 +293,7 @@ class Navbar extends Component {
           handleClick={this.handleClick}
           title="Contact"
           type="Nav"
+          className="main-single-nav"
         />
       </div>
     );

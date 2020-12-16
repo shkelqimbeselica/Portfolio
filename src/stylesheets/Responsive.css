@@ -1,0 +1,206 @@
+@media only screen and (max-width: 768px) {
+  /* svgs nalt */
+  .small-heptagon,
+  .heptagon {
+    left: 0;
+  }
+
+  .main-intro {
+    margin-top: 48px;
+  }
+
+  .main#main {
+    margin-left: -14px;
+    position: relative;
+    top: 24px;
+    height: 1400px;
+  }
+
+  /* secila shkronje */
+  .letter {
+    font-size: 32px;
+    z-index: 5;
+  }
+
+  /* cursori i terminalit */
+  .cursor {
+    width: 18px;
+    height: 24px;
+    margin-left: 6px;
+    margin-top: 5px;
+    z-index: 5;
+  }
+
+  /* Navbari permas */
+  .navbar {
+    display: none;
+  }
+
+  /* emri mbiemrti bashke me p */
+  .intro {
+    margin-left: 0;
+  }
+
+  /* emri mbiemri */
+  h1.title {
+    font-size: 64px;
+    line-height: 64px;
+  }
+
+  p.description {
+    width: 41%;
+  }
+
+  .border-left {
+    /* margin-left: 24px; */
+    margin-left: 0px;
+    margin-top: 32px;
+    height: 295px;
+  }
+
+  .square {
+    margin-top: 290px;
+  }
+
+  .square:before {
+    top: -291px;
+    height: 297px;
+  }
+
+  /* vija skej paragrafit */
+  .lines {
+    left: -63.5px;
+    left: -24px;
+  }
+
+  /* Slideshow */
+  .check-out-my {
+    left: -9px;
+    font-size: 47px;
+    width: 100%;
+    top: -69px;
+    color: white;
+  }
+
+  .work {
+    left: 153px;
+    top: -20px;
+    font-size: 52px;
+    color: #8989a3;
+  }
+
+  .slider#slider {
+    margin-left: -15px;
+  }
+
+  .slide.slide--current {
+    width: 320px !important;
+    height: 220px !important;
+    top: 0;
+  }
+
+  .slide__content {
+    width: 100%;
+    height: 68px;
+    top: 116px;
+  }
+
+  .slide__headline {
+    font-size: 24px;
+  }
+
+  p.role {
+    font-size: 16px;
+  }
+
+  .slide-button {
+    transform: scale(0.6);
+    top: 5px;
+    right: -20px;
+  }
+
+  .slide {
+    top: 18px;
+    height: 180px !important;
+    width: 150px !important;
+  }
+
+  .slider__controls {
+    left: 214px;
+    top: -67px;
+    width: auto;
+  }
+
+  .slider__controls .btn {
+    --size: 44px;
+    margin: 0 4px;
+  }
+
+  .rectangle-main {
+    top: 1900px;
+    left: -137px;
+  }
+
+  .vertical-two {
+    left: 185px;
+  }
+
+  /* About section */
+  .about-me#about {
+    margin-top: 0;
+  }
+
+  .about-me > .container {
+    width: auto;
+  }
+
+  img[alt="Shkëlqim"] {
+    height: 380px;
+    width: 270px;
+  }
+
+  .avatar {
+    display: block;
+  }
+
+  .about-intro {
+    margin-left: 40px;
+    position: relative;
+    top: -40px;
+  }
+
+  .about-intro > h1 {
+    font-size: 64px;
+  }
+
+  .about-intro > p {
+    font-size: 16px;
+    width: 225px;
+  }
+
+  /* FOOTER */
+  .Footer_socialMedias__1WN_7 {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .Footer_main__1-Yg- {
+    display: block;
+  }
+
+  .Footer_heading__3Q4gG {
+    visibility: hidden;
+    /* font-size: 39px;
+    font-size: 64px; */
+  }
+
+  .footer-single-nav {
+    transform: scale(1);
+  }
+
+  .Footer_footer__3JTeg {
+    margin-top: -40px;
+    overflow: hidden;
+    height: 255px;
+  }
+}

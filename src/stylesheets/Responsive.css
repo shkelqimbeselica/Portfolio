@@ -171,6 +171,7 @@
 
   .about-intro > h1 {
     font-size: 64px;
+    width: 300px;
   }
 
   .about-intro > p {
@@ -202,5 +203,9 @@
     margin-top: -40px;
     overflow: hidden;
     height: 255px;
+  }
+
+  p.title-p {
+    display: none;
   }
 }

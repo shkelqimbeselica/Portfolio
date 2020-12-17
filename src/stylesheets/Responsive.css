@@ -95,7 +95,7 @@
 
   .slide.slide--current {
     width: 320px !important;
-    height: 220px !important;
+    height: 200px !important;
     top: 0;
   }
 
@@ -114,9 +114,9 @@
   }
 
   .slide-button {
-    transform: scale(0.6);
+    transform: scale(0.65);
     top: 5px;
-    right: -20px;
+    right: -10px;
   }
 
   .slide {
@@ -155,7 +155,7 @@
   }
 
   img[alt="Shkëlqim"] {
-    height: 380px;
+    height: 335px;
     width: 270px;
   }
 

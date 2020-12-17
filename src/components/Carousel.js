@@ -62,13 +62,13 @@ class Carousel extends Component {
   handleHover = (e) => {
     const target = e.currentTarget;
     target.style.backgroundColor = "#96ffbc";
-    target.children[0].fill = "#181824";
+    target.children[0].children[0].style.fill = "#181824";
   };
 
   handleMouseOut = (e) => {
     const target = e.currentTarget;
     target.style.backgroundColor = "transparent";
-    target.children[0].fill = "#6b7a8f";
+    target.children[0].children[0].style.fill = "#6b7a8f";
   };
 
   scrollIntoView = () => {

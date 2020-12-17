@@ -12,12 +12,12 @@ const StyledButton = (props) => {
 
   const onMouseOver = (e) => {
     const target = e.currentTarget;
-    target.classList.remove("clicked-button");
+    // target.classList.remove("clicked-button");
   };
 
   const onMouseOut = (e) => {
     const target = e.currentTarget;
-    target.classList.add("clicked-button");
+    // target.classList.add("clicked-button");
   };
 
   return (

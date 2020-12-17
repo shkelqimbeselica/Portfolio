@@ -78,7 +78,7 @@ class Slide extends Component {
                 title="View project"
                 root="slide-button"
                 background="slide-background"
-                button="view-project clicked-button"
+                button="view-project"
                 handleButtonClick={this.handleButtonClick}
               />
             </div>

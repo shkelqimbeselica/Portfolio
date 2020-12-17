@@ -64,7 +64,7 @@ class Main extends Component {
                   title="See work"
                   root="button"
                   background="button-background"
-                  button="see-work clicked-button"
+                  button="see-work" // Shtoja clicked-button klasen nese don me kon inverted
                   handleButtonClick={this.handleButtonClick}
                 />
               </div>

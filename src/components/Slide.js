@@ -12,6 +12,7 @@ class Slide extends Component {
 
   handleSlideClick(event) {
     this.props.handleSlideClick(this.props.slide.index);
+    this.handleButtonClick();
   }
 
   imageLoaded(event) {

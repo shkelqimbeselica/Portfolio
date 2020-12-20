@@ -340,6 +340,7 @@ body {
   width: 852px !important;
   height: 536px !important;
   position: relative;
+  cursor: pointer;
 }
 /* @media (hover: hover) {
   .slide--current:hover .slide__image-wrapper {

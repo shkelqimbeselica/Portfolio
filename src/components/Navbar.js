@@ -332,7 +332,6 @@ class Navbar extends Component {
           this.setState({ showMobileNavbar: !this.state.showMobileNavbar });
         }}
       >
-        Hello
         {this.state.showMobileNavbar && (
           <div className="mobile-navbar">
             {this.navBar({ arr: [200, 300, 400, 500] })}

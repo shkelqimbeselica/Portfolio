@@ -1,5 +1,6 @@
 .navbar {
   min-width: 128px;
+  position: relative;
 }
 
 .single-nav {
@@ -30,6 +31,11 @@
 
 .single-nav-expanded {
   width: 144px;
+  transition: width 250ms ease-in-out;
+}
+
+.single-nav-expanded-CONTACT {
+  width: 166px;
   transition: width 250ms ease-in-out;
 }
 

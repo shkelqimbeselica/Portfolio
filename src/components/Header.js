@@ -63,12 +63,15 @@ class Header extends Component {
 
   render() {
     return (
-      <div className="header">
-        {this.state.renderedThings.map((letter, index) => (
-          <Letter key={index} letter={letter} />
-        ))}
-        <Cursor />
-      </div>
+      <>
+        <div className="scroll-to-home" style={{ height: "1px" }}></div>
+        <div className="header">
+          {this.state.renderedThings.map((letter, index) => (
+            <Letter key={index} letter={letter} />
+          ))}
+          <Cursor />
+        </div>
+      </>
     );
   }
 }

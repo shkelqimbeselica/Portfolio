@@ -254,7 +254,7 @@ body {
   height: 600px;
   margin: 0 auto;
   position: relative;
-  margin-top: 290px;
+  /* margin-top: 290px; */
   /* width: var(--slide-size); */
   width: calc(100% - 32px);
 }

@@ -10,22 +10,25 @@ class About extends Component {
   }
   render() {
     return (
-      <div className="about-me" id="about">
-        <div className="container">
-          <div className="avatar">
-            <img src={profile} alt="Shkëlqim" width="339" height="450" />
-            <div className="about-intro">
-              <h1>About me</h1>
-              <p>
-                I am a front-end developer, <br /> ambitious and a code
-                enthusiast! <br /> <br />
-                My main focus is building pixel-perfect, <br /> interactive
-                websites that are complex and yet easy to use.
-              </p>
+      <>
+        <div id="scroll-to-about" style={{ height: "180px" }}></div>
+        <div className="about-me" id="about">
+          <div className="container">
+            <div className="avatar">
+              <img src={profile} alt="Shkëlqim" width="339" height="450" />
+              <div className="about-intro">
+                <h1>About me</h1>
+                <p>
+                  I am a front-end developer, <br /> ambitious and a code
+                  enthusiast! <br /> <br />
+                  My main focus is building pixel-perfect, <br /> interactive
+                  websites that are complex and yet easy to use.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </>
     );
   }
 }

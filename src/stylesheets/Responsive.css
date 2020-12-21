@@ -33,7 +33,34 @@
 
   /* Navbari permas */
   .navbar {
+    position: absolute;
+  }
+
+  .left-sidebar-permanent {
     display: none;
+  }
+
+  .sidebar-conditional-rendered > .hidden {
+    left: -40px;
+  }
+
+  .static {
+    left: 7px !important;
+  }
+
+  .sidebar-conditional-rendered {
+    z-index: 999999 !important;
+  }
+
+  .contact-svg {
+    left: 2px;
+    position: relative;
+  }
+
+  .single-nav {
+    width: 48px;
+    height: 48px;
+    z-index: 50;
   }
 
   /* emri mbiemrti bashke me p */

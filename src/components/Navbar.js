@@ -13,17 +13,22 @@ class Navbar extends Component {
 
   scrollToElement = (el) => {
     const element = document.getElementById(el);
+    element.scrollIntoView();
     // const headerOffset = 120;
     // const elementPosition = element.getBoundingClientRect().top;
     // const offsetPosition = elementPosition - headerOffset;
 
     // // document.body.scrollTo(0, offsetPosition);
-    element.scrollIntoView();
   };
 
   handleHover = (e) => {
-    e.currentTarget.classList.add("single-nav-expanded");
-    this.setState({ hover: e.currentTarget.children[1].textContent });
+    let content = e.currentTarget.children[1].textContent;
+    if (content == "Contact") {
+      e.currentTarget.classList.add("single-nav-expanded-CONTACT");
+    } else {
+      e.currentTarget.classList.add("single-nav-expanded");
+    }
+    this.setState({ hover: content });
   };
 
   loop = (conditional, color) => {
@@ -43,11 +48,11 @@ class Navbar extends Component {
         break;
       }
       case "Work": {
-        this.scrollToElement("slider");
+        this.scrollToElement("scroll-to-main");
         break;
       }
       case "About": {
-        this.scrollToElement("about");
+        this.scrollToElement("scroll-to-about");
         break;
       }
       case "Contact": {
@@ -61,10 +66,15 @@ class Navbar extends Component {
 
   componentDidMount() {
     document.body.addEventListener("scroll", this.scrollHandler);
+    // if(phone) {}
+    // document.addEventListener("click", (e) => {
+    //   this.isNavbarVisible = false;
+    //   this.forceUpdate();
+    // });
   }
 
   componentWillUnmount() {
-    document.body.removeEventListener("scroll", this.scrollHandler);
+    // document.body.removeEventListener("scroll", this.scrollHandler);
   }
 
   checkIfInView(el, percentVisible) {
@@ -85,6 +95,7 @@ class Navbar extends Component {
     let navbar = document.querySelector(".navbar"); // Duhet me ndrru
     let isNavbarVisible = this.checkIfInView(navbar, 0);
 
+    // if(desktop) {}
     this.isNavbarVisible = isNavbarVisible;
     this.forceUpdate();
   };
@@ -255,6 +266,7 @@ class Navbar extends Component {
         viewBox="0 0 28 21"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
+        className="contact-svg"
         // xmlns:xlink="http://www.w3.org/1999/xlink"
       >
         <title>Combined Shape</title>
@@ -343,6 +355,7 @@ class Navbar extends Component {
     if (!this.isNavbarVisible) {
       return (
         <div
+          className="sidebar-conditional-rendered"
           style={{
             position: "fixed",
             zIndex: 20,
@@ -608,8 +621,7 @@ class Navbar extends Component {
     return (
       <div className="navbar">
         <div>{this.renderNavbar()}</div>
-
-        {this.navBar(obj)}
+        <div className="left-sidebar-permanent">{this.navBar(obj)}</div>
       </div>
     );
   }

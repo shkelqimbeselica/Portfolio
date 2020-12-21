@@ -27,7 +27,11 @@ class SingleNav extends Component {
   };
 
   handleBlur = (e) => {
-    e.currentTarget.classList.remove("single-nav-expanded");
+    if (e.currentTarget.children[1].textContent == "Contact") {
+      e.currentTarget.classList.remove("single-nav-expanded-CONTACT");
+    } else {
+      e.currentTarget.classList.remove("single-nav-expanded");
+    }
     this.props.handleBlur(e);
   };
 

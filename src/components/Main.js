@@ -33,11 +33,12 @@ class Main extends Component {
     super(props);
     this.state = {};
 
-    this.carouselRef = React.createRef();
+    this.carousel = null;
   }
 
   handleButtonClick = (e) => {
-    this.carouselRef.current.scrollIntoView();
+    console.log(e);
+    this.carousel.scrollIntoView();
   };
 
   render() {
@@ -71,7 +72,11 @@ class Main extends Component {
             </div>
           </div>
         </div>
-        <Carousel ref={this.carouselRef} heading="My work" slides={slideData} />
+        <Carousel
+          instance={(i) => (this.carousel = i)}
+          heading="My work"
+          slides={slideData}
+        />
       </div>
     );
   }

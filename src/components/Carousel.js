@@ -33,6 +33,7 @@ class Carousel extends Component {
     // this.handleSlideClick = this.handleSlideClick.bind(this);
 
     this.slidesRef = React.createRef();
+    this.props.instance(this);
   }
 
   handlePreviousClick = () => {
@@ -98,51 +99,54 @@ class Carousel extends Component {
     // };
 
     return (
-      <div
-        className="slider"
-        id="slider"
-        aria-labelledby={headingId}
-        ref={this.props.ref}
-      >
-        <div className="my-work" style={{ position: "relative" }}>
-          <span className="check-out-my">Check out my</span>{" "}
-          <span className="work">work</span>
+      <>
+        <div id="scroll-to-main" style={{ height: "290px" }}></div>
+        <div
+          className="slider"
+          id="slider"
+          aria-labelledby={headingId}
+          ref={this.props.ref}
+        >
+          <div className="my-work" style={{ position: "relative" }}>
+            <span className="check-out-my">Check out my</span>{" "}
+            <span className="work">work</span>
+          </div>
+          <ul className="slider__wrapper" style={wrapperTransform}>
+            <h3 id={headingId} ref={this.slidesRef} className="visuallyhidden">
+              {heading}
+            </h3>
+
+            {slides.map((slide) => {
+              return (
+                <Slide
+                  key={slide.index}
+                  slide={slide}
+                  current={current}
+                  handleSlideClick={this.handleSlideClick}
+                />
+              );
+            })}
+          </ul>
+
+          <div className="slider__controls">
+            <SliderControl
+              type="previous"
+              title="Go to previous slide"
+              handleHover={this.handleHover}
+              handleClick={this.handlePreviousClick}
+              handleMouseOut={this.handleMouseOut}
+            />
+
+            <SliderControl
+              type="next"
+              title="Go to next slide"
+              handleHover={this.handleHover}
+              handleClick={this.handleNextClick}
+              handleMouseOut={this.handleMouseOut}
+            />
+          </div>
         </div>
-        <ul className="slider__wrapper" style={wrapperTransform}>
-          <h3 id={headingId} ref={this.slidesRef} className="visuallyhidden">
-            {heading}
-          </h3>
-
-          {slides.map((slide) => {
-            return (
-              <Slide
-                key={slide.index}
-                slide={slide}
-                current={current}
-                handleSlideClick={this.handleSlideClick}
-              />
-            );
-          })}
-        </ul>
-
-        <div className="slider__controls">
-          <SliderControl
-            type="previous"
-            title="Go to previous slide"
-            handleHover={this.handleHover}
-            handleClick={this.handlePreviousClick}
-            handleMouseOut={this.handleMouseOut}
-          />
-
-          <SliderControl
-            type="next"
-            title="Go to next slide"
-            handleHover={this.handleHover}
-            handleClick={this.handleNextClick}
-            handleMouseOut={this.handleMouseOut}
-          />
-        </div>
-      </div>
+      </>
     );
   }
 }

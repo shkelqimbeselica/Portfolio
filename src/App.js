@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import Body from "./components/Body";
 import Main from "./components/Main";
 import About from "./components/About";
 import Footer from "./components/Footer";
+
+import { ViewportContext } from "./context/ViewportContext";
 
 // Stylesheets
 
@@ -15,23 +17,25 @@ import "./stylesheets/Navbar.css";
 
 function App() {
   const [size, setSize] = useState("PC");
+  // const ViewportContext = useContext("Desktop");
 
-  // useEffect(() => {
-  //   if (window.innerHeight <= 480 || window.innerWidth <= 640) {
-  //     setSize("Mobile");
-  //   }
-  // }, []);
+  useEffect(() => {
+    if (window.innerHeight <= 480 || window.innerWidth <= 640) {
+      setSize("Mobile");
+    }
+  }, []);
 
   const render = () => {
     // if (size === "Mobile") {
     //   return <ComingSoon />;
     // }
-
     return (
       <>
-        <Main />
-        <About />
-        <Footer />
+        <ViewportContext.Provider value={size}>
+          <Main />
+          <About />
+          <Footer />
+        </ViewportContext.Provider>
       </>
     );
   };

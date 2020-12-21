@@ -13,7 +13,7 @@
     margin-left: -14px;
     position: relative;
     top: 24px;
-    height: 1400px;
+    height: 1200px;
   }
 
   /* secila shkronje */
@@ -34,10 +34,30 @@
   /* Navbari permas */
   .navbar {
     position: absolute;
+    /* display: none; */
+  }
+
+  .mobile-navbar {
+    position: fixed;
+    z-index: 9999999;
+    left: 16px;
+    bottom: 56px;
   }
 
   .left-sidebar-permanent {
     display: none;
+  }
+
+  .sidebar-conditional-rendered {
+    position: fixed;
+    bottom: 16px;
+    left: 16px;
+    z-index: 20;
+    width: 48px;
+    height: 48px;
+    background-color: #96ffbc;
+    border-radius: 50%;
+    cursor: pointer;
   }
 
   .sidebar-conditional-rendered > .hidden {
@@ -72,6 +92,8 @@
   h1.title {
     font-size: 64px;
     line-height: 64px;
+    width: 300px;
+    left: 0;
   }
 
   p.description {
@@ -233,6 +255,11 @@
   }
 
   p.title-p {
+    display: none;
+  }
+
+  .scroll-to-about {
+    height: 0;
     display: none;
   }
 }

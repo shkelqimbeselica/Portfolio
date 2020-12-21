@@ -37,7 +37,6 @@ class Main extends Component {
   }
 
   handleButtonClick = (e) => {
-    console.log(e);
     this.carousel.scrollIntoView();
   };
 
@@ -49,7 +48,8 @@ class Main extends Component {
           <Navbar />
           <div className="intro">
             <h1 className="title">
-              Welcome <br /> to my portfolio
+              {/* Welcome <br /> to my portfolio */}
+              Front-End <br /> Developer
             </h1>
             <div className="border-left">
               <div className="lines">

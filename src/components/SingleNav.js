@@ -18,8 +18,14 @@ class SingleNav extends Component {
     }, this.props.wait);
   }
 
+  componentWillMount() {
+    // console.log("UNMOUNTED");
+  }
+
   show = () => {
-    this.setState({ hidden: "hidden" });
+    this.setState({ hidden: "hidden" }, () => {
+      // console.log("ADDED CLASS");
+    });
   };
 
   handleHover = (e) => {

@@ -18,22 +18,12 @@ class SingleNav extends Component {
     }, this.props.wait);
   }
 
-  componentWillUnmount() {
-    // console.log("UMOUNTED");
-    console.log(this.props);
-  }
-
-  componentDidUpdate(prevProps, nextState) {
-    // console.log("PROPS: ", prevProps.isMobile);
-    // if (prevProps.isMobile && prevProps.isMobile !== undefined) {
-    // console.log("ASDASDSADSA");
-    // }
-  }
+  // static getDerivedStateFromProps(props, state) {
+  //   console.log("PROPS: ", props.isMobile);
+  // }
 
   show = () => {
-    this.setState({ hidden: "hidden" }, () => {
-      // console.log("ADDED CLASS");
-    });
+    this.setState({ hidden: "hidden" });
   };
 
   handleHover = (e) => {
@@ -58,7 +48,11 @@ class SingleNav extends Component {
 
   render() {
     return (
-      <div className={`far-left ${this.state.hidden}`}>
+      <div
+        className={`far-left ${
+          this.props.isMobile == false ? "" : this.state.hidden
+        }`}
+      >
         <div
           className={`single-nav ${this.props.className} ${
             this.state.className !== "" ? this.state.className : ""

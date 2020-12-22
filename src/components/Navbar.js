@@ -39,6 +39,34 @@ class Navbar extends Component {
     }
   };
 
+  getElementPosition(el) {
+    const target = document.querySelector(el);
+    const viewportOffset = target.getBoundingClientRect();
+    let top = viewportOffset.top;
+    return top;
+  }
+
+  componentDidMount() {
+    let Home = this.getElementPosition(".button");
+    let Work = this.getElementPosition(".my-work");
+    let About = this.getElementPosition(".about-intro");
+    let Contact = this.getElementPosition(".avatar");
+    document.body.addEventListener("scroll", (e) => {
+      let scrollTop = e.target.scrollTop;
+
+      if (scrollTop <= Home - 250) {
+        this.setState({ active: "Home" });
+      } else if (scrollTop <= Work) {
+        this.setState({ active: "Work" });
+      } else if (scrollTop <= About) {
+        this.setState({ active: "About" });
+      }
+      if (scrollTop === 1360) {
+        this.setState({ active: "Contact" });
+      }
+    });
+  }
+
   handleClick = (obj) => {
     obj.event.stopPropagation();
     const target = obj.event.currentTarget;
@@ -327,11 +355,14 @@ class Navbar extends Component {
           this.setState({ showMobileNavbar: !this.state.showMobileNavbar });
         }}
       >
-        {this.state.showMobileNavbar && (
-          <div className="mobile-navbar">
-            {this.navBar({ arr: [200, 300, 400, 500] })}
-          </div>
-        )}
+        {/* {this.state.showMobileNavbar && ( */}
+        <div
+          className="mobile-navbar"
+          // style={{ display: this.state.showMobileNavbar ? "none" : "block" }}
+        >
+          {this.navBar({ arr: [200, 300, 400, 500] })}
+        </div>
+        {/* )} */}
       </div>
     );
     // }

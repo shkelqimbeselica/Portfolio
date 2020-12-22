@@ -26,9 +26,6 @@ function App() {
   }, []);
 
   const render = () => {
-    // if (size === "Mobile") {
-    //   return <ComingSoon />;
-    // }
     return (
       <>
         <ViewportContext.Provider value={size}>

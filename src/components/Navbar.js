@@ -61,7 +61,7 @@ class Navbar extends Component {
       } else if (scrollTop <= About) {
         this.setState({ active: "About" });
       }
-      if (scrollTop >= 1260) {
+      if (scrollTop >= 1160) {
         this.setState({ active: "Contact" });
       }
     });

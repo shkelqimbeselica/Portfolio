@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Slide from "./Slide";
 
+import { ViewportContext } from "../context/ViewportContext";
+
 const SliderControl = ({
   type,
   title,
@@ -89,14 +91,18 @@ class Carousel extends Component {
       .toLowerCase()}`;
 
     // Qikjo posht duhet per pc, laptops etc
-    const wrapperTransform = {
-      transform: `translateX(-${current * (85 / slides.length)}%)`,
-    };
+    let wrapperTransform;
+    if (this.context === "PC") {
+      wrapperTransform = {
+        transform: `translateX(-${current * (85 / slides.length)}%)`,
+      };
+    } else {
+      wrapperTransform = {
+        transform: `translateX(-${current * (78 / slides.length)}%)`,
+      };
+    }
 
     // Qikjo posht duhet per per telefona
-    // const wrapperTransform = {
-    //   transform: `translateX(-${current * (78 / slides.length)}%)`,
-    // };
 
     return (
       <>
@@ -151,4 +157,5 @@ class Carousel extends Component {
   }
 }
 
+Carousel.contextType = ViewportContext;
 export default Carousel;

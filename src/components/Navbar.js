@@ -13,11 +13,6 @@ class Navbar extends Component {
     this.isNavbarVisible = true;
   }
 
-  componentDidMount() {
-    // console.log(this.context);
-    // console.log(ViewportContext);
-  }
-
   scrollToElement = (el) => {
     const element = document.getElementById(el);
     element.scrollIntoView();
@@ -342,20 +337,26 @@ class Navbar extends Component {
     // }
   };
 
-  render() {
+  renderDesktopNavbar = () => {
     let obj = {
       arr: [200, 300, 400, 500],
     };
+    if (this.context === "PC") {
+      this.navBar(obj);
+    }
+  };
 
+  render() {
     return (
       <div className="navbar">
-        {/* <div>{this.renderNavbar()}</div> */}
         {this.renderNavbar()}
-        <div className="left-sidebar-permanent">{this.navBar(obj)}</div>
+        <div className="left-sidebar-permanent">
+          {this.renderDesktopNavbar()}
+        </div>
       </div>
     );
   }
 }
 
-ViewportContext.contextType = Navbar;
+Navbar.contextType = ViewportContext;
 export default Navbar;

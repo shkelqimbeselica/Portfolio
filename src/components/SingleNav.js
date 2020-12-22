@@ -18,8 +18,16 @@ class SingleNav extends Component {
     }, this.props.wait);
   }
 
-  componentWillMount() {
-    // console.log("UNMOUNTED");
+  componentWillUnmount() {
+    // console.log("UMOUNTED");
+    console.log(this.props);
+  }
+
+  componentDidUpdate(prevProps, nextState) {
+    // console.log("PROPS: ", prevProps.isMobile);
+    // if (prevProps.isMobile && prevProps.isMobile !== undefined) {
+    // console.log("ASDASDSADSA");
+    // }
   }
 
   show = () => {

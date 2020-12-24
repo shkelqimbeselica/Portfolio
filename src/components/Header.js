@@ -3,6 +3,7 @@ import Letter from "./Letter";
 import Cursor from "./Cursor";
 
 import "../stylesheets/Header.css";
+// import "../stylesheets/Responsive.css";
 
 class Header extends Component {
   constructor(props) {

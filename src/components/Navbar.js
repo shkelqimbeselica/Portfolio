@@ -47,24 +47,27 @@ class Navbar extends Component {
   }
 
   componentDidMount() {
-    let Home = this.getElementPosition(".button");
-    let Work = this.getElementPosition(".my-work");
-    let About = this.getElementPosition(".about-intro");
-    let Contact = this.getElementPosition(".avatar");
-    document.body.addEventListener("scroll", (e) => {
-      let scrollTop = e.target.scrollTop;
+    console.log(this.context);
+    if (this.context == "Mobile") {
+      let Home = this.getElementPosition(".button");
+      let Work = this.getElementPosition(".my-work");
+      let About = this.getElementPosition(".about-intro");
+      // let Contact = this.getElementPosition(".avatar");
+      document.body.addEventListener("scroll", (e) => {
+        let scrollTop = e.target.scrollTop;
 
-      if (scrollTop <= Home - 250) {
-        this.setState({ active: "Home" });
-      } else if (scrollTop <= Work) {
-        this.setState({ active: "Work" });
-      } else if (scrollTop <= About) {
-        this.setState({ active: "About" });
-      }
-      if (scrollTop >= 1160) {
-        this.setState({ active: "Contact" });
-      }
-    });
+        if (scrollTop <= Home - 250) {
+          this.setState({ active: "Home" });
+        } else if (scrollTop <= Work) {
+          this.setState({ active: "Work" });
+        } else if (scrollTop <= About) {
+          this.setState({ active: "About" });
+        }
+        if (scrollTop >= 1160) {
+          this.setState({ active: "Contact" });
+        }
+      });
+    }
   }
 
   handleClick = (obj) => {

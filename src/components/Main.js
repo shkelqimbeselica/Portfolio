@@ -7,6 +7,7 @@ import StyledButton from "./StyledButton";
 import portfolio from "../img/Portfolio.png";
 import listify from "../img/Listify.png";
 import balkanCuisine from "../img/Balkan Cuisine.webp";
+import streamer from "../img/Streamer.png";
 
 import "../stylesheets/Main.css";
 
@@ -25,6 +26,11 @@ const slideData = [
     index: 2,
     headline: "Balkan Cuisine",
     src: balkanCuisine,
+  },
+  {
+    index: 3,
+    headline: "Streamer",
+    src: streamer,
   },
 ];
 

@@ -44,6 +44,10 @@
     bottom: 56px;
   }
 
+  .far-left {
+    left: -200px;
+  }
+
   .left-sidebar-permanent {
     display: none;
   }

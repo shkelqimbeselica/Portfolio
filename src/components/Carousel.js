@@ -94,11 +94,11 @@ class Carousel extends Component {
     let wrapperTransform;
     if (this.context === "PC") {
       wrapperTransform = {
-        transform: `translateX(-${current * (85 / slides.length)}%)`,
+        transform: `translateX(-${current * (88 / slides.length)}%)`,
       };
     } else {
       wrapperTransform = {
-        transform: `translateX(-${current * (78 / slides.length)}%)`,
+        transform: `translateX(-${current * (80 / slides.length)}%)`,
       };
     }
 

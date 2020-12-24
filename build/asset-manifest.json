@@ -1,26 +1,27 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.1d09ce10.chunk.css",
-    "main.js": "/Portfolio/static/js/main.d457fd62.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.d457fd62.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.a56a5c51.chunk.css",
+    "main.js": "/Portfolio/static/js/main.75174e3f.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.75174e3f.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.e440ee5a.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.e440ee5a.js.map",
-    "static/js/2.ccc9409b.chunk.js": "/Portfolio/static/js/2.ccc9409b.chunk.js",
-    "static/js/2.ccc9409b.chunk.js.map": "/Portfolio/static/js/2.ccc9409b.chunk.js.map",
+    "static/js/2.384e31df.chunk.js": "/Portfolio/static/js/2.384e31df.chunk.js",
+    "static/js/2.384e31df.chunk.js.map": "/Portfolio/static/js/2.384e31df.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "precache-manifest.bc5978d5aecf4cbd681c23436eeabee8.js": "/Portfolio/precache-manifest.bc5978d5aecf4cbd681c23436eeabee8.js",
+    "precache-manifest.9b84652d7cebe474bfb939a2787c3c32.js": "/Portfolio/precache-manifest.9b84652d7cebe474bfb939a2787c3c32.js",
     "service-worker.js": "/Portfolio/service-worker.js",
-    "static/css/main.1d09ce10.chunk.css.map": "/Portfolio/static/css/main.1d09ce10.chunk.css.map",
-    "static/js/2.ccc9409b.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.ccc9409b.chunk.js.LICENSE.txt",
+    "static/css/main.a56a5c51.chunk.css.map": "/Portfolio/static/css/main.a56a5c51.chunk.css.map",
+    "static/js/2.384e31df.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.384e31df.chunk.js.LICENSE.txt",
     "static/media/Balkan Cuisine.webp": "/Portfolio/static/media/Balkan Cuisine.23f09006.webp",
     "static/media/Listify.png": "/Portfolio/static/media/Listify.4e9e22ec.png",
     "static/media/Portfolio.png": "/Portfolio/static/media/Portfolio.5806c5ee.png",
-    "static/media/Shkelqim.jpg": "/Portfolio/static/media/Shkelqim.92d4e020.jpg"
+    "static/media/Shkelqim.jpg": "/Portfolio/static/media/Shkelqim.92d4e020.jpg",
+    "static/media/Streamer.png": "/Portfolio/static/media/Streamer.c60edc8d.png"
   },
   "entrypoints": [
     "static/js/runtime-main.e440ee5a.js",
-    "static/js/2.ccc9409b.chunk.js",
-    "static/css/main.1d09ce10.chunk.css",
-    "static/js/main.d457fd62.chunk.js"
+    "static/js/2.384e31df.chunk.js",
+    "static/css/main.a56a5c51.chunk.css",
+    "static/js/main.75174e3f.chunk.js"
   ]
 }

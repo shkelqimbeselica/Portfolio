@@ -63,6 +63,7 @@
     border-radius: 50%;
     cursor: pointer;
     transition: all 500ms ease-in-out;
+    -webkit-tap-highlight-color: transparent;
   }
 
   .hidden {
@@ -77,6 +78,7 @@
     justify-content: center;
     align-items: center;
     transition: all 500ms ease-in-out;
+    -webkit-tap-highlight-color: transparent;
   }
 
   .vertical-burger {

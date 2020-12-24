@@ -358,6 +358,15 @@ class Navbar extends Component {
           this.setState({ showMobileNavbar: !this.state.showMobileNavbar });
         }}
       >
+        <div
+          className={`three-dots ${
+            this.state.showMobileNavbar ? "vertical-burger" : ""
+          }`}
+        >
+          <div className="dot"></div>
+          <div className="dot"></div>
+          <div className="dot"></div>
+        </div>
         {/* {this.state.showMobileNavbar && ( */}
         <div
           className="mobile-navbar"

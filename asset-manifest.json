@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.a56a5c51.chunk.css",
+    "main.css": "/Portfolio/static/css/main.4095b86a.chunk.css",
     "main.js": "/Portfolio/static/js/main.75174e3f.chunk.js",
     "main.js.map": "/Portfolio/static/js/main.75174e3f.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.e440ee5a.js",
@@ -8,9 +8,9 @@
     "static/js/2.384e31df.chunk.js": "/Portfolio/static/js/2.384e31df.chunk.js",
     "static/js/2.384e31df.chunk.js.map": "/Portfolio/static/js/2.384e31df.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "precache-manifest.9b84652d7cebe474bfb939a2787c3c32.js": "/Portfolio/precache-manifest.9b84652d7cebe474bfb939a2787c3c32.js",
+    "precache-manifest.ad25fb331f6ac95d90ed399bee5676d2.js": "/Portfolio/precache-manifest.ad25fb331f6ac95d90ed399bee5676d2.js",
     "service-worker.js": "/Portfolio/service-worker.js",
-    "static/css/main.a56a5c51.chunk.css.map": "/Portfolio/static/css/main.a56a5c51.chunk.css.map",
+    "static/css/main.4095b86a.chunk.css.map": "/Portfolio/static/css/main.4095b86a.chunk.css.map",
     "static/js/2.384e31df.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.384e31df.chunk.js.LICENSE.txt",
     "static/media/Balkan Cuisine.webp": "/Portfolio/static/media/Balkan Cuisine.23f09006.webp",
     "static/media/Listify.png": "/Portfolio/static/media/Listify.4e9e22ec.png",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.e440ee5a.js",
     "static/js/2.384e31df.chunk.js",
-    "static/css/main.a56a5c51.chunk.css",
+    "static/css/main.4095b86a.chunk.css",
     "static/js/main.75174e3f.chunk.js"
   ]
 }

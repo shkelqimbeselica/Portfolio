@@ -60,7 +60,7 @@
     width: 48px;
     height: 48px;
     background-color: #96ffbc;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     cursor: pointer;
     transition: all 500ms ease-in-out;
     -webkit-tap-highlight-color: transparent;

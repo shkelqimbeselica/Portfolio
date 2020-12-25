@@ -58,17 +58,17 @@ class Navbar extends Component {
 
         if (scrollTop <= Home - 250) {
           this.setState({ active: "Home" });
-          // console.log("home");
+          console.log("HOME: ", Home);
         } else if (scrollTop <= Work) {
           this.setState({ active: "Work" });
-          // console.log("work");
+          console.log("WORK: ", Work);
         } else if (scrollTop <= About) {
           this.setState({ active: "About" });
-          // console.log("about");
+          console.log("About: ", About);
         }
 
         if (scrollTop >= 1220) {
-          // console.log("contact");
+          console.log("Contact");
           this.setState({ active: "Contact" });
         }
       });

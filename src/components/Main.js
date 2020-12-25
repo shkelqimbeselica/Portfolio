@@ -10,6 +10,7 @@ import balkanCuisine from "../img/Balkan Cuisine.webp";
 import streamer from "../img/Streamer.png";
 
 import "../stylesheets/Main.css";
+import { ViewportContext } from "../context/ViewportContext";
 
 const slideData = [
   {
@@ -55,7 +56,11 @@ class Main extends Component {
           <div className="intro">
             <h1 className="title">
               {/* Welcome <br /> to my portfolio */}
-              Front-End <br /> Developer
+              Front-End{" "}
+              <br
+                style={{ display: this.context === "PC" ? "block" : "none" }}
+              />{" "}
+              Developer
             </h1>
             <div className="border-left">
               <div className="lines">
@@ -88,4 +93,5 @@ class Main extends Component {
   }
 }
 
+Main.contextType = ViewportContext;
 export default Main;

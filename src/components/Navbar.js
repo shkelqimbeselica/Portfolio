@@ -48,7 +48,7 @@ class Navbar extends Component {
 
   componentDidMount() {
     console.log(this.context);
-    if (this.context == "Mobile") {
+    if (this.context !== "PC") {
       let Home = this.getElementPosition(".button");
       let Work = this.getElementPosition(".my-work");
       let About = this.getElementPosition(".about-intro");

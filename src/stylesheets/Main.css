@@ -12,8 +12,12 @@
 }
 
 .intro {
-  margin-left: 36px;
+  /* margin-left: 36px;
+  width: 100%; */
+
   width: 100%;
+  position: absolute;
+  left: 164px;
 }
 
 h1.title {

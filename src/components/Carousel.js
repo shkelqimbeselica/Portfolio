@@ -4,7 +4,7 @@ import Slide from "./Slide";
 import { ViewportContext } from "../context/ViewportContext";
 
 import "../stylesheets/Main.css";
-import "../stylesheets/Responsive.css";
+// import "../stylesheets/Responsive.css";
 
 const SliderControl = ({
   type,

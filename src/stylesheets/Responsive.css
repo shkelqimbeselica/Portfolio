@@ -230,7 +230,7 @@
   }
 
   .about-me > .container {
-    width: auto !important;
+    width: auto;
   }
 
   img[alt="Shkëlqim"] {
@@ -239,37 +239,37 @@
   }
 
   .avatar {
-    display: block !important;
+    display: block;
   }
 
   .about-intro {
-    margin-left: 40px !important;
-    position: relative !important;
-    top: -40px !important;
+    margin-left: 40px;
+    position: relative;
+    top: -40px;
   }
 
   .about-intro > h1 {
-    font-size: 64px !important;
-    width: 300px !important;
+    font-size: 64px;
+    width: 300px;
   }
 
   .about-intro > p {
-    font-size: 16px !important;
-    width: 225px !important;
+    font-size: 16px;
+    width: 225px;
   }
 
   /* FOOTER */
   .Footer_socialMedias__1WN_7 {
-    width: 100% !important;
-    margin-left: 0 !important;
+    width: 100%;
+    margin-left: 0;
   }
 
   .Footer_main__1-Yg- {
-    display: block !important;
+    display: block;
   }
 
   .Footer_heading__3Q4gG {
-    visibility: hidden !important;
+    visibility: hidden;
     /* font-size: 39px;
     font-size: 64px; */
   }
@@ -279,9 +279,9 @@
   }
 
   .Footer_footer__3JTeg {
-    margin-top: -40px !important;
-    overflow: hidden !important;
-    height: 255px !important;
+    margin-top: -40px;
+    overflow: hidden;
+    height: 255px;
   }
 
   p.title-p {

@@ -26,6 +26,7 @@
   position: relative;
   left: -88px;
   color: white;
+  text-transform: uppercase;
 }
 
 .about-intro > p {

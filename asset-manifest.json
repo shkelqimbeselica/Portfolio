@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.b3cbc0df.chunk.css",
+    "main.css": "/Portfolio/static/css/main.1f546df2.chunk.css",
     "main.js": "/Portfolio/static/js/main.d30681e8.chunk.js",
     "main.js.map": "/Portfolio/static/js/main.d30681e8.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.e440ee5a.js",
@@ -8,11 +8,12 @@
     "static/js/2.93ebd288.chunk.js": "/Portfolio/static/js/2.93ebd288.chunk.js",
     "static/js/2.93ebd288.chunk.js.map": "/Portfolio/static/js/2.93ebd288.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "precache-manifest.c1e666209fed8bf020d54e1a9915e7b5.js": "/Portfolio/precache-manifest.c1e666209fed8bf020d54e1a9915e7b5.js",
+    "precache-manifest.c239b8d04e2666ded79589824a2c8971.js": "/Portfolio/precache-manifest.c239b8d04e2666ded79589824a2c8971.js",
     "service-worker.js": "/Portfolio/service-worker.js",
-    "static/css/main.b3cbc0df.chunk.css.map": "/Portfolio/static/css/main.b3cbc0df.chunk.css.map",
+    "static/css/main.1f546df2.chunk.css.map": "/Portfolio/static/css/main.1f546df2.chunk.css.map",
     "static/js/2.93ebd288.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.93ebd288.chunk.js.LICENSE.txt",
     "static/media/Balkan Cuisine.webp": "/Portfolio/static/media/Balkan Cuisine.23f09006.webp",
+    "static/media/Body.css": "/Portfolio/static/media/IBMPlexSans-Regular.c02b4dc6.ttf",
     "static/media/Listify.png": "/Portfolio/static/media/Listify.4e9e22ec.png",
     "static/media/Portfolio.png": "/Portfolio/static/media/Portfolio.5806c5ee.png",
     "static/media/Shkelqim.jpg": "/Portfolio/static/media/Shkelqim.92d4e020.jpg",
@@ -21,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.e440ee5a.js",
     "static/js/2.93ebd288.chunk.js",
-    "static/css/main.b3cbc0df.chunk.css",
+    "static/css/main.1f546df2.chunk.css",
     "static/js/main.d30681e8.chunk.js"
   ]
 }

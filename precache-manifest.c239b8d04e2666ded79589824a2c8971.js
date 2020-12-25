@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5f5578fe60019ccaf1dc60036dbefbc0",
+    "revision": "de4e0d4e26ee5f7e75aaef1c6277397e",
     "url": "/Portfolio/index.html"
   },
   {
-    "revision": "f5e28f6bd036cbab5445",
-    "url": "/Portfolio/static/css/main.b3cbc0df.chunk.css"
+    "revision": "8e279e995954d08888a9",
+    "url": "/Portfolio/static/css/main.1f546df2.chunk.css"
   },
   {
     "revision": "bac2c04b682b84c5605b",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio/static/js/2.93ebd288.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f5e28f6bd036cbab5445",
+    "revision": "8e279e995954d08888a9",
     "url": "/Portfolio/static/js/main.d30681e8.chunk.js"
   },
   {
@@ -26,6 +26,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "23f09006ec93651f589a71b565f76e44",
     "url": "/Portfolio/static/media/Balkan Cuisine.23f09006.webp"
+  },
+  {
+    "revision": "21bb70b62317f276f2e97a919ff5bd8c",
+    "url": "/Portfolio/static/media/BebasNeue-Regular.21bb70b6.ttf"
+  },
+  {
+    "revision": "c02b4dc6554c116e4c40f254889d5871",
+    "url": "/Portfolio/static/media/IBMPlexSans-Regular.c02b4dc6.ttf"
   },
   {
     "revision": "4e9e22ecb5e9af529f65aa1eed2559de",

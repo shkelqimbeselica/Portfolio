@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect, useContext, Component } from "react";
 import Body from "./components/Body";
 import Main from "./components/Main";
 import About from "./components/About";
@@ -15,33 +15,34 @@ import "./stylesheets/Header.css";
 import "./stylesheets/Main.css";
 import "./stylesheets/Navbar.css";
 
-function App() {
-  const [size, setSize] = useState("PC");
-  // const ViewportContext = useContext("Desktop");
+class App extends Component {
+  state = { size: "PC" };
 
-  useEffect(() => {
+  componentDidMount() {
     if (window.innerHeight <= 480 || window.innerWidth <= 640) {
-      setSize("Mobile");
+      this.setState({ size: "Mobile" });
     }
-  }, []);
+  }
 
-  const render = () => {
+  renderLayout() {
     return (
       <>
-        <ViewportContext.Provider value={size}>
+        <ViewportContext.Provider value={this.state.size}>
           <Main />
           <About />
           <Footer />
         </ViewportContext.Provider>
       </>
     );
-  };
+  }
 
-  return (
-    <div className="App" style={{ height: "100%" }}>
-      <Body size={size}>{render()}</Body>
-    </div>
-  );
+  render() {
+    return (
+      <div className="App" style={{ height: "100%" }}>
+        <Body size={this.state.size}>{this.renderLayout()}</Body>
+      </div>
+    );
+  }
 }
 
 export default App;

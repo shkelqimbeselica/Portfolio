@@ -80,11 +80,13 @@ class Carousel extends Component {
 
   scrollIntoView = () => {
     const element = this.slidesRef.current;
-    const headerOffset = 120;
-    const elementPosition = element.getBoundingClientRect().top;
-    const offsetPosition = elementPosition - headerOffset;
+    // const headerOffset = 120;
+    // const elementPosition = element.getBoundingClientRect().top;
+    // const offsetPosition = elementPosition - headerOffset;
 
-    document.body.scrollTo(0, offsetPosition);
+    element.scrollIntoView();
+
+    // document.body.scrollTo(0, offsetPosition);
   };
 
   render() {
@@ -110,7 +112,11 @@ class Carousel extends Component {
 
     return (
       <>
-        <div id="scroll-to-main" style={{ height: "290px" }}></div>
+        <div
+          id="scroll-to-main"
+          style={{ height: "290px" }}
+          ref={this.slidesRef}
+        ></div>
         <div
           className="slider"
           id="slider"
@@ -122,7 +128,7 @@ class Carousel extends Component {
             <span className="work">work</span>
           </div>
           <ul className="slider__wrapper" style={wrapperTransform}>
-            <h3 id={headingId} ref={this.slidesRef} className="visuallyhidden">
+            <h3 id={headingId} className="visuallyhidden">
               {heading}
             </h3>
 

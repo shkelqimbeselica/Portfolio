@@ -2,86 +2,11 @@ import React, { Component, createRef } from "react";
 import "../stylesheets/Body.css";
 
 class Body extends Component {
-  constructor(props) {
-    super(props);
-
-    // this.numberOfItems = [1, 2, 3, 4];
-    // this.isNavbarVisible = null;
-    // this.timer = null;
-  }
-
-  // componentDidMount() {
-  //   document.body.addEventListener("scroll", this.scrollHandler);
-
-  //   setTimeout(() => {
-  //     this.scheduleNextUpdate();
-  //   }, 150);
-  // }
-
-  // componentWillUnmount() {
-  //   document.body.removeEventListener("scroll", this.scrollHandler);
-  // }
-
-  // checkIfInView(el, percentVisible) {
-  //   let rect = el.getBoundingClientRect(),
-  //     windowHeight =
-  //       window.innerHeight || document.documentElement.clientHeight;
-
-  //   return !(
-  //     Math.floor(
-  //       100 - ((rect.top >= 0 ? 0 : rect.top) / +-(rect.height / 1)) * 100
-  //     ) < percentVisible ||
-  //     Math.floor(100 - ((rect.bottom - windowHeight) / rect.height) * 100) <
-  //       percentVisible
-  //   );
-  // }
-
-  // scrollHandler = (el) => {
-  //   let navbar = document.querySelector(".navbar"); // Duhet me ndrru
-  //   let isNavbarVisible = this.checkIfInView(navbar, 0);
-
-  //   this.isNavbarVisible = isNavbarVisible;
-  //   // this.setState()
-  //   console.log(this.isNavbarVisible);
-  //   this.forceUpdate();
-  // };
-
-  // scheduleNextUpdate = () => {
-  //   this.timer = setTimeout(this.updateRenderedThings, 100);
-  // };
-
-  // componentWillUnmount() {
-  //   clearTimeout(this.timer);
-  // }
-
-  // // updateRenderedThings = () => {
-  // //   const itemsRendered = this.state.itemsRendered;
-  // //   const updatedState = {
-  // //     renderedThings: this.state.renderedThings.concat(
-  // //       this.numberOfItems[this.state.itemsRendered]
-  // //     ),
-  // //     itemsRendered: itemsRendered + 1,
-  // //   };
-  // //   this.setState(updatedState);
-  // //   if (updatedState.itemsRendered < this.name.length) {
-  // //     this.scheduleNextUpdate();
-  // //   }
-  // // };
-
-  // // renderNavbar = () => {
-  // //   if (!this.isNavbarVisible) {
-  // //     // Nese nuk shihet
-  // //     return this.state.renderedThings.map((letter, index) => (
-  // //       <div key={index}></div>
-  // //     ));
-  // //   }
-  // // };
-
   render() {
     return (
       <div
         className="body"
-        ref={this.bodyRef}
+        // ref={this.bodyRef}
         style={{ marginTop: this.props.size === "Mobile" ? 0 : "58px" }}
       >
         {/* a */}

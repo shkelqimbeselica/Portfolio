@@ -21,7 +21,7 @@ class Navbar extends Component {
     // const elementPosition = element.getBoundingClientRect().top;
     // const offsetPosition = elementPosition - headerOffset;
 
-    // // document.body.scrollTo(0, offsetPosition);
+    // document.body.scrollTo(0, offsetPosition);
   };
 
   handleHover = (e) => {
@@ -48,23 +48,27 @@ class Navbar extends Component {
   }
 
   componentDidMount() {
-    console.log(this.context);
-    if (this.context !== "PC") {
+    if (window.innerHeight <= 480 || window.innerWidth <= 640) {
       let Home = this.getElementPosition(".button");
       let Work = this.getElementPosition(".my-work");
-      let About = this.getElementPosition(".about-intro");
-      // let Contact = this.getElementPosition(".avatar");
+      let About = this.getElementPosition("#scroll-to-about");
       document.body.addEventListener("scroll", (e) => {
         let scrollTop = e.target.scrollTop;
+        // let scrollTop = window.pageYOffset;
 
         if (scrollTop <= Home - 250) {
           this.setState({ active: "Home" });
+          // console.log("home");
         } else if (scrollTop <= Work) {
           this.setState({ active: "Work" });
+          // console.log("work");
         } else if (scrollTop <= About) {
           this.setState({ active: "About" });
+          // console.log("about");
         }
-        if (scrollTop >= 1160) {
+
+        if (scrollTop >= 1220) {
+          // console.log("contact");
           this.setState({ active: "Contact" });
         }
       });

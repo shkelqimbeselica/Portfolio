@@ -30,11 +30,11 @@ const slideData = [
     headline: "Balkan Cuisine",
     src: balkanCuisine,
   },
-  {
-    index: 3,
-    headline: "Streamer",
-    src: streamer,
-  },
+  // {
+  //   index: 3,
+  //   headline: "Streamer",
+  //   src: streamer,
+  // },
 ];
 
 class Main extends Component {

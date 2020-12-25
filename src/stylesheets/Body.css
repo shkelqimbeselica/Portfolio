@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Bebas neue";
-  src: url(/Fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+  src: url(../fonts/Bebas_Neue/BebasNeue-Regular.ttf);
 }
 
 @font-face {
   font-family: "IBM Plax Sans";
-  src: url(/Fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf);
+  src: url(../fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf);
 }
 * {
   margin: 0;

@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import StyledButton from "./StyledButton";
 
+import "../stylesheets/Body.css";
+
 class Slide extends Component {
   constructor(props) {
     super(props);

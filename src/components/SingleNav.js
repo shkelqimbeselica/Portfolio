@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import "../stylesheets/Navbar.css";
+import "../stylesheets/Body.css";
 
 class SingleNav extends Component {
   constructor(props) {

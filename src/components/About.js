@@ -4,7 +4,7 @@ import "../stylesheets/About.css";
 import profile from "../img/Shkelqim.jpg";
 
 import "../stylesheets/About.css";
-// import "../stylesheets/Responsive.css";
+import "../stylesheets/Body.css";
 
 class About extends Component {
   constructor(props) {

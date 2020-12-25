@@ -1,6 +1,7 @@
 import React from "react";
 
 import "../stylesheets/Main.css";
+import "../stylesheets/Body.css";
 
 const StyledButton = (props) => {
   const handleButtonClick = (e) => {

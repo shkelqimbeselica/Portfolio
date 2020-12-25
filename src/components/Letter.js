@@ -1,6 +1,7 @@
 import React, { PureComponent } from "react";
 
 import "../stylesheets/Header.css";
+import "../stylesheets/Body.css";
 
 class Letter extends PureComponent {
   constructor(props) {

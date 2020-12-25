@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import SingleNav from "./SingleNav";
 
 import style from "../stylesheets/Footer.module.css";
+import "../stylesheets/Body.css";
 
 const Footer = (props) => {
   const [hover, setHover] = useState("");

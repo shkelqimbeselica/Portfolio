@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.686b3eb1.chunk.css",
+    "main.js": "/Portfolio/static/js/main.354e9d70.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.354e9d70.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.e440ee5a.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.e440ee5a.js.map",
+    "static/js/2.a23dbc3e.chunk.js": "/Portfolio/static/js/2.a23dbc3e.chunk.js",
+    "static/js/2.a23dbc3e.chunk.js.map": "/Portfolio/static/js/2.a23dbc3e.chunk.js.map",
+    "index.html": "/Portfolio/index.html",
+    "precache-manifest.794258ac9589d232e2db4c95666990ff.js": "/Portfolio/precache-manifest.794258ac9589d232e2db4c95666990ff.js",
+    "service-worker.js": "/Portfolio/service-worker.js",
+    "static/css/main.686b3eb1.chunk.css.map": "/Portfolio/static/css/main.686b3eb1.chunk.css.map",
+    "static/js/2.a23dbc3e.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.a23dbc3e.chunk.js.LICENSE.txt",
+    "static/media/Balkan Cuisine.webp": "/Portfolio/static/media/Balkan Cuisine.23f09006.webp",
+    "static/media/Listify.png": "/Portfolio/static/media/Listify.4e9e22ec.png",
+    "static/media/Portfolio.png": "/Portfolio/static/media/Portfolio.5806c5ee.png",
+    "static/media/Shkelqim.jpg": "/Portfolio/static/media/Shkelqim.92d4e020.jpg",
+    "static/media/Streamer.png": "/Portfolio/static/media/Streamer.c60edc8d.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e440ee5a.js",
+    "static/js/2.a23dbc3e.chunk.js",
+    "static/css/main.686b3eb1.chunk.css",
+    "static/js/main.354e9d70.chunk.js"
+  ]
+}

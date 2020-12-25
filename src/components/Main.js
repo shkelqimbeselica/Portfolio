@@ -10,6 +10,8 @@ import balkanCuisine from "../img/Balkan Cuisine.webp";
 import streamer from "../img/Streamer.png";
 
 import "../stylesheets/Main.css";
+import "../stylesheets/Body.css";
+
 import { ViewportContext } from "../context/ViewportContext";
 
 const slideData = [

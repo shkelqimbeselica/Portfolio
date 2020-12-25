@@ -4,6 +4,7 @@ import Cursor from "./Cursor";
 
 import "../stylesheets/Header.css";
 // import "../stylesheets/Responsive.css";
+import "../stylesheets/Body.css";
 
 class Header extends Component {
   constructor(props) {

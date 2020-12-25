@@ -4,6 +4,7 @@ import SingleNav from "./SingleNav";
 import { ViewportContext } from "../context/ViewportContext";
 
 import "../stylesheets/Navbar.css";
+import "../stylesheets/Body.css";
 
 class Navbar extends Component {
   constructor(props) {
